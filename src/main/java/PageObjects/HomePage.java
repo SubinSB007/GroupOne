@@ -19,7 +19,6 @@ public HomePage(WebDriver driver) {
 	//methods
 	public boolean loginbtnpresent() {
 	boolean p=loginBtn.isDisplayed();
-	System.out.println(p);
 	return p;
     }
 	
