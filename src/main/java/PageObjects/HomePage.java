@@ -12,7 +12,7 @@ public HomePage(WebDriver driver) {
 }
 	//locators
     @FindBy (className = "btn1") WebElement loginBtn ;
-    @FindBy (xpath ="//link[@rel=\"icon\"]") WebElement Logo;
+    @FindBy (xpath = "//img[@class='logo']") WebElement Logo;
     @FindBy (xpath= "//H1[text()='Welcome to ICT Academy of Kerala']") WebElement  welcomeMsg;
     @FindBy (className = "btn2") WebElement joinusBtn;
     

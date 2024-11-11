@@ -5,8 +5,8 @@
     <classes>
       <class name="TestCases.HomePageTest">
         <methods>
+          <include name="TC_HP_5"/>
           <include name="tearDown"/>
-          <include name="TC_HP_7"/>
           <include name="testSetUp"/>
         </methods>
       </class> <!-- TestCases.HomePageTest -->
