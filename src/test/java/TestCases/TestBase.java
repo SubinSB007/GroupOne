@@ -42,10 +42,10 @@ public class TestBase {
 	driver.get(prop.getProperty("url"));
 	Thread.sleep(5000);
 		}
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
+	//@AfterClass
+	//public void tearDown() {
+	//	driver.quit();
+	//}
 	
 
 }
