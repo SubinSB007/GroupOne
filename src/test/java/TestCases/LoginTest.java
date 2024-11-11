@@ -10,11 +10,10 @@ public class LoginTest extends TestBase{
 	@Test
 	public void testproject()throws Exception {
 	    logobj = new LoginPage(driver);
-	    logobj.goinUs();
-		logobj.setEmail(prop.getProperty("email"));
-		logobj.setPass(prop.getProperty("password"));
+		logobj.setEmail(prop.getProperty("emailmentor"));
+		logobj.setPass(prop.getProperty("passwordmentor"));
 		logobj.login();
-		
+	
 		}
 
 		
