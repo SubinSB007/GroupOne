@@ -5,4 +5,6 @@
   <testcase classname="TestCases.HomePageTest" name="TC_HP_5" time="0.05"/>
   <testcase classname="TestCases.HomePageTest" name="TC_HP_6" time="0.057"/>
   <testcase classname="TestCases.HomePageTest" name="TC_HP_3" time="0.049"/>
+<testsuite ignored="0" hostname="DESKTOP-DREBJVE" failures="0" tests="1" name="Default test" time="15.052" errors="0" timestamp="2024-11-12T03:09:25 IST">
+  <testcase classname="TestCases.LoginTest" name="testproject" time="0.619"/>
 </testsuite> <!-- Default test -->

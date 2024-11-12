@@ -10,6 +10,12 @@
           <include name="testSetUp"/>
         </methods>
       </class> <!-- TestCases.HomePageTest -->
+      <class name="TestCases.LoginTest">
+        <methods>
+          <include name="testproject"/>
+          <include name="testSetUp"/>
+        </methods>
+      </class> <!-- TestCases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
