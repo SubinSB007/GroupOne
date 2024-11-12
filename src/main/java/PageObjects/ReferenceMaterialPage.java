@@ -3,27 +3,30 @@ package PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class ReferenceMaterialPage {
 WebDriver driver;
 	
 	public ReferenceMaterialPage(WebDriver driver) {
 		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
-	    WebElement logout_btn = driver.findElement(By.xpath("//span[text()='Logout']"));
-	    WebElement referenceMaterialsHeader = driver.findElement(By.xpath("//h1[text()='Reference Materials']"));
-	    WebElement addReferenceMaterial_btn = driver.findElement(By.xpath("//button[text()='+ ADD REFERENCE MATERIAL']"));
-	    WebElement refMatTopic_head = driver.findElement(By.xpath("//th[text()=\"Topic\"]"));
-	    WebElement refMatRefMaterial_head = driver.findElement(By.xpath("//th[text()=\"Reference Material\"]"));
-	    WebElement refMatActions_head = driver.findElement(By.xpath("//th[text()=\"Actions\"]"));
-	    WebElement deleteButton = driver.findElement(By.xpath("//td[text()=\"Python full stack\"]//parent::tr//descendant::button"));
-	    WebElement addrefMatTopic = driver.findElement(By.xpath("//input[@id=\"topic\"]"));
-	    WebElement addrefMatMaterial = driver.findElement(By.xpath("id=\"referenceMaterial\""));
-	    WebElement addrefMatUrl = driver.findElement(By.xpath("//input[@id=\"url\"]"));
-	    WebElement addrefMatStatus = driver.findElement(By.xpath("//input[@id=\"status\"]"));
-	    WebElement submit_btn = driver.findElement(By.xpath("//button[@type=\"submit\"]"));
-	    WebElement cancel_btn = driver.findElement(By.xpath("//button[@type=\"button\"]"));
-	     
+	@FindBy(xpath ="//span[text()=\"Logout\"]") WebElement logout_btn;
+	@FindBy(xpath ="//h1[text()='Reference Materials']") WebElement referenceMaterialsHeader;
+	@FindBy(xpath ="//button[text()='+ ADD REFERENCE MATERIAL']") WebElement addReferenceMaterial_btn;
+	@FindBy(xpath ="//th[text()=\"Topic\"]") WebElement refMatTopic_head;
+	@FindBy(xpath ="//th[text()=\"Reference Material\"]") WebElement refMatRefMaterial_head;
+	@FindBy(xpath ="//th[text()=\"Actions\"]") WebElement refMatActions_head;
+	@FindBy(xpath ="//td[text()=\"Python full stack\"]//parent::tr//descendant::button") WebElement deleteButton;
+	@FindBy(xpath ="//input[@id=\"topic\"]") WebElement addrefMatTopic;
+	@FindBy(xpath ="//input[@id=\"referenceMaterial\"]") WebElement addrefMatMaterial;
+	@FindBy(xpath ="//input[@id=\"url\"]") WebElement addrefMatUrl;
+	@FindBy(xpath ="//input[@id=\"status\"]") WebElement addrefMatStatus;
+	@FindBy(xpath ="//button[@type=\"submit\"]") WebElement submit_btn;
+	@FindBy(xpath ="//button[@type=\"button\"]") WebElement cancel_btn;
+	
 	    public boolean isReferenceMaterialsHeaderVisible() {
 	        return referenceMaterialsHeader.isDisplayed();
 	    }

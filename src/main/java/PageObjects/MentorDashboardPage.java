@@ -3,27 +3,31 @@ package PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class MentorDashboardPage {
 WebDriver driver;
 	
 	public MentorDashboardPage(WebDriver driver) {
 		this.driver=driver;
-	}
-	//locators
-		 WebElement logout_btn = driver.findElement(By.xpath("//span[text()=\"Logout\"]"));
-		 WebElement ReferenceMaterial_btn = driver.findElement(By.xpath("//span[text()=\"Reference Materials\"]"));
-		 WebElement dashboard_Display = driver.findElement(By.xpath("//span[text()=\"Dashboard\"]"));
-		 WebElement mernProject_view = driver.findElement(By.xpath("//h6[text()=\"MERN Stack Web Development\"]//parent::div//button"));
-		 WebElement subHead_Name = driver.findElement(By.xpath("//th[text()=\"Student Name\"]"));
-		 WebElement subHead_Batch = driver.findElement(By.xpath("//th[text()=\"Batch\"]"));
-		 WebElement subHead_Topic = driver.findElement(By.xpath("//th[text()=\"Topic\"]"));
-		 WebElement subHead_status = driver.findElement(By.xpath("//th[text()=\"Evaluation status\"]"));
-		 WebElement subHead_Actions = driver.findElement(By.xpath("//th[text()=\"Actions\"]")); 
-		 WebElement batch_drop = driver.findElement(By.xpath("//input[@id=\"batch-combo-box\"]")); 
-		 WebElement batch_jan = driver.findElement(By.xpath("//li[text()=\"January-2024\"]"));
-		 WebElement topic_drop = driver.findElement(By.xpath("//input[@id=\"topic-combo-box\"]"));
-		 WebElement topic_library = driver.findElement(By.xpath("//li[text()=\"Library website\"]"));
+		PageFactory.initElements(driver, this);
+ }
+	//locators 
+	@FindBy(xpath ="//span[text()=\"Logout\"]") WebElement logout_btn;
+	@FindBy(xpath ="//span[text()=\"Reference Materials\"]") WebElement ReferenceMaterial_btn;
+	@FindBy(xpath ="//span[text()=\"Dashboard\"]") WebElement dashboard_Display;
+	@FindBy(xpath ="//h6[text()=\"MERN Stack Web Development\"]//parent::div//button") WebElement mernProject_view;
+	@FindBy(xpath ="//th[text()=\"Student Name\"]") WebElement subHead_Name;
+	@FindBy(xpath ="//th[text()=\"Batch\"]") WebElement subHead_Topic;
+	@FindBy(xpath ="//th[text()=\"Batch\"]") WebElement subHead_Batch;
+	@FindBy(xpath ="//th[text()=\"Evaluation status\"]") WebElement subHead_status;
+	@FindBy(xpath ="//th[text()=\"Actions\"]") WebElement subHead_Actions;
+	@FindBy(xpath ="//input[@id=\"batch-combo-box\"]") WebElement batch_drop;
+	@FindBy(xpath ="//li[text()=\"January-2024\"]") WebElement batch_jan;
+	@FindBy(xpath ="//input[@id=\"topic-combo-box\"]") WebElement topic_drop;
+	@FindBy(xpath ="//li[text()=\"Library website\"]") WebElement topic_library;
+	
 		 // methods
 		 public boolean dashboardTextDisplay() {
 			boolean d=  dashboard_Display.isDisplayed();
