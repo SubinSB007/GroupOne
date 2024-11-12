@@ -15,7 +15,7 @@ WebDriver driver;
 	}
 	@FindBy(xpath ="//span[text()=\"Logout\"]") WebElement logout_btn;
 	@FindBy(xpath ="//h1[text()='Reference Materials']") WebElement referenceMaterialsHeader;
-	@FindBy(xpath ="//button[text()='+ ADD REFERENCE MATERIAL']") WebElement addReferenceMaterial_btn;
+	@FindBy(xpath ="//div[@class=\"MuiBox-root css-irrfx6\"]//button") WebElement addReferenceMaterial_btn;
 	@FindBy(xpath ="//th[text()=\"Topic\"]") WebElement refMatTopic_head;
 	@FindBy(xpath ="//th[text()=\"Reference Material\"]") WebElement refMatRefMaterial_head;
 	@FindBy(xpath ="//th[text()=\"Actions\"]") WebElement refMatActions_head;
