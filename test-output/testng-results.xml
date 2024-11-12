@@ -3,6 +3,7 @@
   <reporter-output>
   </reporter-output>
 
+
   <suite started-at="2024-11-12T00:38:57 IST" name="Default suite" finished-at="2024-11-12T00:39:07 IST" duration-ms="10205">
     <groups>
     </groups>
@@ -29,6 +30,22 @@
           </reporter-output>
         </test-method> <!-- TC_HP_3 -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.HomePageTest@2b662a77]" started-at="2024-11-12T00:39:07 IST" name="tearDown" finished-at="2024-11-12T00:39:07 IST" duration-ms="358" status="PASS">
+
+  <suite started-at="2024-11-12T10:55:14 IST" name="Default suite" finished-at="2024-11-12T10:55:25 IST" duration-ms="10695">
+    <groups>
+    </groups>
+    <test started-at="2024-11-12T10:55:14 IST" name="Default test" finished-at="2024-11-12T10:55:25 IST" duration-ms="10695">
+      <class name="TestCases.LoginTest">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:TestCases.LoginTest@77847718]" started-at="2024-11-12T10:55:15 IST" name="testSetUp" finished-at="2024-11-12T10:55:25 IST" duration-ms="10298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="testproject()[pri:0, instance:TestCases.LoginTest@77847718]" started-at="2024-11-12T10:55:25 IST" name="testproject" finished-at="2024-11-12T10:55:25 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testproject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.LoginTest@77847718]" started-at="2024-11-12T10:55:25 IST" name="tearDown" finished-at="2024-11-12T10:55:25 IST" duration-ms="324" status="PASS">
+
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
