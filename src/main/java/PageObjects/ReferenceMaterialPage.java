@@ -22,11 +22,24 @@ WebDriver driver;
 	@FindBy(xpath ="//td[text()=\"Python full stack\"]//parent::tr//descendant::button") WebElement deleteButton;
 	@FindBy(xpath ="//input[@id=\"topic\"]") WebElement addrefMatTopic;
 	@FindBy(xpath ="//input[@id=\"referenceMaterial\"]") WebElement addrefMatMaterial;
+	@FindBy(xpath = "//input[@name=\"postedDate\"]") WebElement DateReferencematerial;
 	@FindBy(xpath ="//input[@id=\"url\"]") WebElement addrefMatUrl;
 	@FindBy(xpath ="//input[@id=\"status\"]") WebElement addrefMatStatus;
 	@FindBy(xpath ="//button[@type=\"submit\"]") WebElement submit_btn;
 	@FindBy(xpath ="//button[@type=\"button\"]") WebElement cancel_btn;
-	
+		
+		public void setDate(String date) {
+			DateReferencematerial.sendKeys(date);
+		}
+		public String refMaterialPageUrl() {
+			String URL = driver.getCurrentUrl();
+			return URL;
+		}
+		public String addRefMaterialPageUrl() {
+			String url = driver.getCurrentUrl();
+			return url; 
+					
+		}
 	    public boolean isReferenceMaterialsHeaderVisible() {
 	        return referenceMaterialsHeader.isDisplayed();
 	    }
@@ -60,8 +73,10 @@ WebDriver driver;
 	    public void submitClick() {
 	    	submit_btn.click();
 	    }
-	    public void cancelClick() {
+	    public boolean cancelClick() {
+	    	boolean e = cancel_btn.isEnabled();
 	    	cancel_btn.click();
+	    	return e;
 	    }
 	    public void enterTopic(String t) {
 	    	addrefMatTopic.sendKeys(t);
@@ -75,4 +90,5 @@ WebDriver driver;
 	    public void enterStatus(String t) {
 	    	addrefMatStatus.sendKeys(t);
 	    }
+	    
 }

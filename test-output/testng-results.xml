@@ -1,21 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-12T20:58:18 IST" name="Default suite" finished-at="2024-11-12T20:58:29 IST" duration-ms="11528">
+  <suite started-at="2024-11-16T15:57:30 IST" name="Default suite" finished-at="2024-11-16T15:58:34 IST" duration-ms="63993">
     <groups>
     </groups>
-    <test started-at="2024-11-12T20:58:18 IST" name="Default test" finished-at="2024-11-12T20:58:29 IST" duration-ms="11528">
-      <class name="TestCases.LoginTest">
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:TestCases.LoginTest@131774fe]" started-at="2024-11-12T20:58:18 IST" name="testSetUp" finished-at="2024-11-12T20:58:28 IST" duration-ms="10081" status="PASS">
+    <test started-at="2024-11-16T15:57:30 IST" name="Default test" finished-at="2024-11-16T15:58:34 IST" duration-ms="63993">
+      <class name="TestCases.AdminDashboardTest">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:57:31 IST" name="testSetUp" finished-at="2024-11-16T15:57:41 IST" duration-ms="10061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="testproject()[pri:0, instance:TestCases.LoginTest@131774fe]" started-at="2024-11-12T20:58:28 IST" name="testproject" finished-at="2024-11-12T20:58:29 IST" duration-ms="1330" status="PASS">
+        <test-method is-config="true" signature="adminlogin()[pri:0, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:57:41 IST" name="adminlogin" finished-at="2024-11-16T15:57:42 IST" duration-ms="1255" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testproject -->
-      </class> <!-- TestCases.LoginTest -->
+        </test-method> <!-- adminlogin -->
+        <test-method signature="testLogoutBtnAvailable()[pri:1, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:57:42 IST" name="testLogoutBtnAvailable" finished-at="2024-11-16T15:57:46 IST" duration-ms="3913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutBtnAvailable -->
+        <test-method signature="testProjectListHeader()[pri:2, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:57:46 IST" name="testProjectListHeader" finished-at="2024-11-16T15:57:46 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProjectListHeader -->
+        <test-method signature="testAddProjectButtonPresent()[pri:3, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:57:46 IST" name="testAddProjectButtonPresent" finished-at="2024-11-16T15:57:46 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectButtonPresent -->
+        <test-method signature="testAddprojectButtonFunctinality()[pri:4, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:57:46 IST" name="testAddprojectButtonFunctinality" finished-at="2024-11-16T15:57:46 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddprojectButtonFunctinality -->
+        <test-method signature="testAddProjectAddbutton(java.lang.String,java.lang.String)[pri:5, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:57:48 IST" name="testAddProjectAddbutton" data-provider="testAddProjectAddCancelBtn" finished-at="2024-11-16T15:57:59 IST" depends-on-methods="TestCases.AdminDashboardTest.testAddprojectButtonFunctinality" duration-ms="10312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sample Project]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3 months]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectAddbutton -->
+        <test-method signature="testDeleteButtonActions(java.lang.String,java.lang.String)[pri:6, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:57:59 IST" name="testDeleteButtonActions" data-provider="testAddProjectAddCancelBtn" finished-at="2024-11-16T15:58:05 IST" depends-on-methods="TestCases.AdminDashboardTest.testAddProjectAddbutton" duration-ms="6113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sample Project]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3 months]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteButtonActions -->
+        <test-method signature="testAddProjectCancelbutton(java.lang.String,java.lang.String)[pri:7, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:58:05 IST" name="testAddProjectCancelbutton" data-provider="testAddProjectAddCancelBtn" finished-at="2024-11-16T15:58:09 IST" depends-on-methods="TestCases.AdminDashboardTest.testAddprojectButtonFunctinality" duration-ms="4033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sample Project]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3 months]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectCancelbutton -->
+        <test-method signature="testAddProjectNegativeData(java.lang.String,java.lang.String)[pri:8, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:58:10 IST" name="testAddProjectNegativeData" data-provider="testAddProjectNegativedata" finished-at="2024-11-16T15:58:16 IST" duration-ms="6720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectNegativeData -->
+        <test-method signature="testAddProjectNegativeData(java.lang.String,java.lang.String)[pri:8, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:58:16 IST" name="testAddProjectNegativeData" data-provider="testAddProjectNegativedata" finished-at="2024-11-16T15:58:23 IST" duration-ms="7063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[git sample]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectNegativeData -->
+        <test-method signature="testAddProjectNegativeData(java.lang.String,java.lang.String)[pri:8, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:58:23 IST" name="testAddProjectNegativeData" data-provider="testAddProjectNegativedata" finished-at="2024-11-16T15:58:30 IST" duration-ms="7000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5 months]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectNegativeData -->
+        <test-method signature="testEditProjectPositive()[pri:9, instance:TestCases.AdminDashboardTest@5158b42f]" started-at="2024-11-16T15:58:30 IST" name="testEditProjectPositive" finished-at="2024-11-16T15:58:34 IST" duration-ms="4111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditProjectPositive -->
+      </class> <!-- TestCases.AdminDashboardTest -->
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-16T11:36:03 IST" name="Default suite" finished-at="2024-11-16T11:36:25 IST" duration-ms="22152">
+    <groups>
+    </groups>
+    <test started-at="2024-11-16T11:36:03 IST" name="Default test" finished-at="2024-11-16T11:36:25 IST" duration-ms="22152">
+      <class name="TestCases.MentorDashboardTest">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:03 IST" name="testSetUp" finished-at="2024-11-16T11:36:12 IST" duration-ms="9867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method is-config="true" signature="loginMentorDash()[pri:0, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:12 IST" name="loginMentorDash" finished-at="2024-11-16T11:36:13 IST" duration-ms="839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginMentorDash -->
+        <test-method signature="testrefMatVisibleSide()[pri:1, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:13 IST" name="testrefMatVisibleSide" finished-at="2024-11-16T11:36:19 IST" duration-ms="5159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testrefMatVisibleSide -->
+        <test-method signature="testsubmissionListPage()[pri:2, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:19 IST" name="testsubmissionListPage" finished-at="2024-11-16T11:36:19 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsubmissionListPage -->
+        <test-method signature="testBatchDropdown()[pri:3, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:19 IST" name="testBatchDropdown" finished-at="2024-11-16T11:36:22 IST" duration-ms="3362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchDropdown -->
+        <test-method signature="testTopicDropdown()[pri:4, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:22 IST" name="testTopicDropdown" finished-at="2024-11-16T11:36:23 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTopicDropdown -->
+        <test-method signature="testRefMaterialClickable()[pri:5, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:23 IST" name="testRefMaterialClickable" finished-at="2024-11-16T11:36:23 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefMaterialClickable -->
+        <test-method signature="testRefMatTableHeader()[pri:6, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:23 IST" name="testRefMatTableHeader" finished-at="2024-11-16T11:36:25 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="1800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefMatTableHeader -->
+        <test-method signature="testActionsDeletebtnEnable()[pri:7, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:25 IST" name="testActionsDeletebtnEnable" finished-at="2024-11-16T11:36:25 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testActionsDeletebtnEnable -->
+        <test-method signature="testAddRefMaterailDisplayed()[pri:8, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:25 IST" name="testAddRefMaterailDisplayed" finished-at="2024-11-16T11:36:25 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddRefMaterailDisplayed -->
+        <test-method signature="testAddRefMaterailFunction()[pri:9, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:25 IST" name="testAddRefMaterailFunction" finished-at="2024-11-16T11:36:25 IST" depends-on-methods="TestCases.MentorDashboardTest.testAddRefMaterailDisplayed" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddRefMaterailFunction -->
+      </class> <!-- TestCases.MentorDashboardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
