@@ -12,4 +12,14 @@
   <testcase classname="TestCases.AdminDashboardTest" name="testAddProjectNegativeData" time="7.063"/>
   <testcase classname="TestCases.AdminDashboardTest" name="testAddProjectNegativeData" time="7.0"/>
   <testcase classname="TestCases.AdminDashboardTest" name="testEditProjectPositive" time="4.111"/>
+<testsuite ignored="0" hostname="LAPTOP-E462BQ6V" failures="0" tests="9" name="Default test" time="22.152" errors="0" timestamp="2024-11-16T11:36:25 IST">
+  <testcase classname="TestCases.MentorDashboardTest" name="testrefMatVisibleSide" time="5.159"/>
+  <testcase classname="TestCases.MentorDashboardTest" name="testsubmissionListPage" time="0.399"/>
+  <testcase classname="TestCases.MentorDashboardTest" name="testBatchDropdown" time="3.362"/>
+  <testcase classname="TestCases.MentorDashboardTest" name="testTopicDropdown" time="0.271"/>
+  <testcase classname="TestCases.MentorDashboardTest" name="testRefMaterialClickable" time="0.16"/>
+  <testcase classname="TestCases.MentorDashboardTest" name="testRefMatTableHeader" time="1.8"/>
+  <testcase classname="TestCases.MentorDashboardTest" name="testActionsDeletebtnEnable" time="0.043"/>
+  <testcase classname="TestCases.MentorDashboardTest" name="testAddRefMaterailDisplayed" time="0.049"/>
+  <testcase classname="TestCases.MentorDashboardTest" name="testAddRefMaterailFunction" time="0.132"/>
 </testsuite> <!-- Default test -->

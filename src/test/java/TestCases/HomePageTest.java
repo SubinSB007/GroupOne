@@ -1,17 +1,15 @@
 package TestCases;
 
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
-import PageObjects.LoginPage;
 
 public class HomePageTest extends TestBase{
 	HomePage HP;
+
 	LoginPage LP;
-
-
+  
 	@Test (priority=1)
 	public void TC_HP_7() {
 		HP=new HomePage(driver);
@@ -34,6 +32,8 @@ public class HomePageTest extends TestBase{
 		String message = HP.welcomemsgPresent();
 		Assert.assertEquals(message,"Welcome to ICT Academy of Kerala");
 		System.out.println("Welcome message is present: " + message);
+        Assert.assertNotNull(message, "Welcome message is missing");
+        System.out.println("Welcome message is present: " + message);
 	}
 
 
@@ -57,4 +57,12 @@ public class HomePageTest extends TestBase{
 		System.out.println("directed to login page"); 
 
 	}
+}
+    HP=new HomePage(driver);
+    boolean J = HP.joinusbtnEnable();
+    Assert.assertTrue(J, "Join us button is not present");
+    System.out.println("Join us button present: " + J);
+  
+    }
+    
 }

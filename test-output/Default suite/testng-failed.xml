@@ -15,6 +15,13 @@
           <include name="testAddProjectCancelbutton" invocation-numbers="0"/>
         </methods>
       </class> <!-- TestCases.AdminDashboardTest -->
+      <class name="TestCases.ReferenceMaterialPageTest">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="testAddrefmaterialCancelbtn"/>
+          <include name="addReference"/>
+        </methods>
+      </class> <!-- TestCases.ReferenceMaterialPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
