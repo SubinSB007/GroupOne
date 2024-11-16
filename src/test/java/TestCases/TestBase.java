@@ -40,7 +40,6 @@ public class TestBase {
 		}
 	driver.manage().window().maximize();
 	driver.get(prop.getProperty("url"));
-	Thread.sleep(5000);
 		}
 	//@AfterClass
 	//public void tearDown() {
