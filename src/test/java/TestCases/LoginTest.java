@@ -7,9 +7,15 @@ import PageObjects.LoginPage;
 
 
 public class LoginTest extends TestBase{
+
 	LoginPage lp=null;
 	HomePage hp=null;
+
+	HomePage HP;
+	LoginPage logobj=null;
+
 	@Test
+
 	public void testMentorLogin()throws Exception {
 	    lp = new LoginPage(driver);
 	    hp = new HomePage(driver);
@@ -29,6 +35,15 @@ public class LoginTest extends TestBase{
 		lp.setPass(prop.getProperty("passwordmentor"));
 		lp.login();
 		
+
+	public void testproject()throws Exception {
+		HP=new HomePage(driver);
+	    logobj = new LoginPage(driver);
+	    HP.loginbtnClick();
+		logobj.setEmail(prop.getProperty("emailmentor"));
+		logobj.setPass(prop.getProperty("passwordmentor"));
+		logobj.login();
+
 	
 		}
 

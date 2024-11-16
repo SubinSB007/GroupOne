@@ -18,13 +18,10 @@ public HomePage(WebDriver driver) {
     
 	//methods
 	public boolean loginbtnpresent() {
-	boolean p=loginBtn.isDisplayed();
-	return p;
+	return loginBtn.isDisplayed();
+	
     }
 	
-	public void loginbtnclick () {
-		loginBtn.click();
-	    }
 	public boolean logodisplayed() {
 		return Logo.isDisplayed();
 	    }
@@ -33,5 +30,8 @@ public HomePage(WebDriver driver) {
 	    }
 	public boolean joinusbtnEnable() {
 		return joinusBtn.isEnabled();
+	}
+	public void loginbtnClick() {
+		loginBtn.click();
 	}
 }

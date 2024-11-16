@@ -16,6 +16,11 @@ WebDriver driver;
  @FindBy(xpath="//input[@name='password']") WebElement pass;
  @FindBy(xpath="//button[@type='submit']") WebElement log;
  
+ public String getUrlcurrent() {
+	String url=driver.getCurrentUrl();
+	 return url;
+	 
+ }
 	public void setEmail(String emailid)
 	{
 	
