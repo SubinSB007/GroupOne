@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.LoginTest">
+      <class name="TestCases.ReferenceMaterialPageTest">
         <methods>
-          <include name="testproject"/>
           <include name="testSetUp"/>
+          <include name="testAddrefmaterialCancelbtn"/>
+          <include name="addReference"/>
         </methods>
-      </class> <!-- TestCases.LoginTest -->
+      </class> <!-- TestCases.ReferenceMaterialPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
