@@ -3,12 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.LoginTest">
+      <class name="TestCases.AdminDashboardTest">
         <methods>
-          <include name="testproject"/>
+          <include name="testAddProjectNegativeData" invocation-numbers="0 1 2"/>
+          <include name="testAddprojectButtonFunctinality"/>
+          <include name="testAddProjectAddbutton" invocation-numbers="0"/>
+          <include name="adminlogin"/>
+          <include name="testEditProjectPositive"/>
+          <include name="testDeleteButtonActions"/>
           <include name="testSetUp"/>
+          <include name="testAddProjectCancelbutton" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TestCases.LoginTest -->
+      </class> <!-- TestCases.AdminDashboardTest -->
+      <class name="TestCases.ReferenceMaterialPageTest">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="testAddrefmaterialCancelbtn"/>
+          <include name="addReference"/>
+        </methods>
+      </class> <!-- TestCases.ReferenceMaterialPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

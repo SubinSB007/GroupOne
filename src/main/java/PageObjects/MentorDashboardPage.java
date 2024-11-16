@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class MentorDashboardPage {
 WebDriver driver;
@@ -70,11 +71,13 @@ WebDriver driver;
 			  boolean a = subHead_Actions.isDisplayed();
 			return a;
 		  }
-		  public void batchBoxClick() {
+		  public void batchBoxClick() throws InterruptedException {
+			  
+			  Thread.sleep(3000);
 			  batch_drop.click();
 		  }
 		  public void batchJanDropClick() {
-			  batch_jan.click();
+			  getBatch_jan().click();
 		  }
 		  public void topicBoxClick() {
 			  topic_drop.click();
@@ -84,8 +87,9 @@ WebDriver driver;
 		  }
 		  public String  getSelectedBatch() {
 			  try {
-				 return batch_drop.getAttribute("value");
-			  }
+				  String S = batch_drop.getAttribute("value");
+				  return S;			
+				 }
 			  catch(Exception e) {
 				  return e.getMessage();
 			  }
@@ -98,5 +102,13 @@ WebDriver driver;
 				  return e.getMessage();
 			  }
 		  }
+		public WebElement getBatch_jan() {
+			return batch_jan;
+		}
+		public void setBatch_jan(WebElement batch_jan) {
+			this.batch_jan = batch_jan;
+		}
+		  
+
 
 }
