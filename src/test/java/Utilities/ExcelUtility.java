@@ -27,49 +27,51 @@ public class ExcelUtility {
 	}
 	
 	public int getRowCount(String sheetname) throws IOException {
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetname);
-		int rowcount=sheet.getPhysicalNumberOfRows();
-		workbook.close();
-		fi.close();
-		return rowcount;
+	    fi = new FileInputStream(path);
+	    workbook = new XSSFWorkbook(fi);
+	    sheet = workbook.getSheet(sheetname);
+	    int rowcount = sheet.getLastRowNum() ; // row indices start at 0
+	    workbook.close();
+	    fi.close();
+	    return rowcount;
 	}
-	
-	public int getCellCount(String sheetname,int rownum) throws IOException {
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetname);
-		row=sheet.getRow(rownum);
-		int cellcount=row.getLastCellNum();
-		workbook.close();
-		fi.close();
-		return cellcount;
-		}
-	
-	public String getCellData(String sheetname,int rownum,int colnum) throws IOException {
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetname);
-		row=sheet.getRow(rownum);
-		cell=row.getCell(colnum);
-		
-		DataFormatter  formatter =new DataFormatter();
-		String data;
-		try
-		{
-			//data=cell.toString();
-			
-			data=formatter.formatCellValue(cell); //returns the formatted value of a cell as a string regardless of the cell type 
-		}
-		catch(Exception e)
-		{
-			data="";
-		}
-		workbook.close();
-		fi.close();
-		return data;
-}
+	public int getCellCount(String sheetname, int rownum) throws IOException {
+	    fi = new FileInputStream(path);
+	    workbook = new XSSFWorkbook(fi);
+	    sheet = workbook.getSheet(sheetname);
+	    row = sheet.getRow(rownum);
+	    
+	    int cellcount = 0;
+	    if (row != null) {
+	        cellcount = row.getLastCellNum(); // Returns the count of cells
+	    }
+	    
+	    workbook.close();
+	    fi.close();
+	    return cellcount;
+	}
+	public String getCellData(String sheetname, int rownum, int colnum) throws IOException {
+	    fi = new FileInputStream(path);
+	    workbook = new XSSFWorkbook(fi);
+	    sheet = workbook.getSheet(sheetname);
+	    row = sheet.getRow(rownum);
+	    
+	    String data = "";
+	    if (row != null) {
+	        cell = row.getCell(colnum);
+	        
+	        DataFormatter formatter = new DataFormatter();
+	        if (cell != null) {
+	            data = formatter.formatCellValue(cell); // Returns the formatted value as a string
+	        }
+	    }
+	    
+	    workbook.close();
+	    fi.close();
+	    return data;
+	}
+
+
 	public void setCellData(String sheetname,int rownum,int colnum,String data) throws IOException {
 	 File xlfile=new File(path);
 	 if(!xlfile.exists()) {
