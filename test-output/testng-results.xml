@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-12T20:58:18 IST" name="Default suite" finished-at="2024-11-12T20:58:29 IST" duration-ms="11528">
+  <suite started-at="2024-11-16T11:36:03 IST" name="Default suite" finished-at="2024-11-16T11:36:25 IST" duration-ms="22152">
     <groups>
     </groups>
-    <test started-at="2024-11-12T20:58:18 IST" name="Default test" finished-at="2024-11-12T20:58:29 IST" duration-ms="11528">
-      <class name="TestCases.LoginTest">
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:TestCases.LoginTest@131774fe]" started-at="2024-11-12T20:58:18 IST" name="testSetUp" finished-at="2024-11-12T20:58:28 IST" duration-ms="10081" status="PASS">
+    <test started-at="2024-11-16T11:36:03 IST" name="Default test" finished-at="2024-11-16T11:36:25 IST" duration-ms="22152">
+      <class name="TestCases.MentorDashboardTest">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:03 IST" name="testSetUp" finished-at="2024-11-16T11:36:12 IST" duration-ms="9867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method signature="testproject()[pri:0, instance:TestCases.LoginTest@131774fe]" started-at="2024-11-12T20:58:28 IST" name="testproject" finished-at="2024-11-12T20:58:29 IST" duration-ms="1330" status="PASS">
+        <test-method is-config="true" signature="loginMentorDash()[pri:0, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:12 IST" name="loginMentorDash" finished-at="2024-11-16T11:36:13 IST" duration-ms="839" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testproject -->
-      </class> <!-- TestCases.LoginTest -->
+        </test-method> <!-- loginMentorDash -->
+        <test-method signature="testrefMatVisibleSide()[pri:1, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:13 IST" name="testrefMatVisibleSide" finished-at="2024-11-16T11:36:19 IST" duration-ms="5159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testrefMatVisibleSide -->
+        <test-method signature="testsubmissionListPage()[pri:2, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:19 IST" name="testsubmissionListPage" finished-at="2024-11-16T11:36:19 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsubmissionListPage -->
+        <test-method signature="testBatchDropdown()[pri:3, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:19 IST" name="testBatchDropdown" finished-at="2024-11-16T11:36:22 IST" duration-ms="3362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchDropdown -->
+        <test-method signature="testTopicDropdown()[pri:4, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:22 IST" name="testTopicDropdown" finished-at="2024-11-16T11:36:23 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTopicDropdown -->
+        <test-method signature="testRefMaterialClickable()[pri:5, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:23 IST" name="testRefMaterialClickable" finished-at="2024-11-16T11:36:23 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefMaterialClickable -->
+        <test-method signature="testRefMatTableHeader()[pri:6, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:23 IST" name="testRefMatTableHeader" finished-at="2024-11-16T11:36:25 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="1800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefMatTableHeader -->
+        <test-method signature="testActionsDeletebtnEnable()[pri:7, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:25 IST" name="testActionsDeletebtnEnable" finished-at="2024-11-16T11:36:25 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testActionsDeletebtnEnable -->
+        <test-method signature="testAddRefMaterailDisplayed()[pri:8, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:25 IST" name="testAddRefMaterailDisplayed" finished-at="2024-11-16T11:36:25 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddRefMaterailDisplayed -->
+        <test-method signature="testAddRefMaterailFunction()[pri:9, instance:TestCases.MentorDashboardTest@1bd4fdd]" started-at="2024-11-16T11:36:25 IST" name="testAddRefMaterailFunction" finished-at="2024-11-16T11:36:25 IST" depends-on-methods="TestCases.MentorDashboardTest.testAddRefMaterailDisplayed" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddRefMaterailFunction -->
+      </class> <!-- TestCases.MentorDashboardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
