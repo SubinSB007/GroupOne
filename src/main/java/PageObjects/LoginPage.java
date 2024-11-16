@@ -1,6 +1,5 @@
 package PageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,6 +15,7 @@ WebDriver driver;
  @FindBy(xpath="//input[@name='email']") WebElement email;
  @FindBy(xpath="//input[@name='password']") WebElement pass;
  @FindBy(xpath="//button[@type='submit']") WebElement log;
+ 
 	public void setEmail(String emailid)
 	{
 	
