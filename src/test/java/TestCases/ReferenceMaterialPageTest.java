@@ -23,6 +23,9 @@ public class ReferenceMaterialPageTest extends TestBase{
 			 
 			 HP = new HomePage(driver);
 			 LP = new LoginPage(driver);
+			 MDP = new MentorDashboardPage(driver);
+			 RMP = new ReferenceMaterialPage(driver);
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 			 HP.loginbtnClick();
 			 LP.setEmail(prop.getProperty("emailmentor"));
 			 LP.setPass(prop.getProperty("passwordmentor"));
@@ -30,9 +33,6 @@ public class ReferenceMaterialPageTest extends TestBase{
 		 }
 		@Test(dataProvider=  "testAddrefmaterial" , dataProviderClass = DataproviderAddrefmaterial.class)
 		public void testAddrefmaterialCancelbtn(String Topic , String Reference , String Date,String Url , String status) {
-			MDP=new MentorDashboardPage(driver);
-			RMP=new ReferenceMaterialPage(driver);
-			driver.manage(). timeouts().implicitlyWait(Duration.ofSeconds(15));
 			MDP.referenceMaterialClick();
 			RMP.addrefMaterialClick();
 			RMP.enterTopic(Topic);
@@ -41,8 +41,21 @@ public class ReferenceMaterialPageTest extends TestBase{
 			RMP.enterStatus(status);
 			RMP.setDate(Date);
 			Assert.assertTrue(RMP.cancelClick());
+			
 		}
-		
+		@Test(dataProvider=  "testAddrefmaterial" , dataProviderClass = DataproviderAddrefmaterial.class)
+		public void testAddrefmaterialSubmitbtn(String Topic , String Reference , String Date,String Url , String status) throws InterruptedException {			
+			MDP.referenceMaterialClick();
+			RMP.addrefMaterialClick();
+			RMP.enterTopic(Topic);
+			RMP.enterMaterial(Reference);
+			RMP.enterUrl(Url);
+			RMP.enterStatus(status);
+			RMP.setDate(Date);
+			RMP.submitClick();
+			Assert.assertEquals(RMP.swtichToAlert(),"New Material added Successfully" );
+			
+		}
 		 
  }
 	
