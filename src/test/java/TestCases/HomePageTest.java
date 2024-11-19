@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
+import PageObjects.LoginPage;
 
 public class HomePageTest extends TestBase{
 	HomePage HP;
@@ -47,7 +48,7 @@ public class HomePageTest extends TestBase{
 	}
 
 	@Test(priority=5)
-	public void TC_HP_8() {
+	public void TC_HP_8() throws InterruptedException {
 
 		HP=new HomePage(driver);
 		LP= new LoginPage(driver);
@@ -57,12 +58,12 @@ public class HomePageTest extends TestBase{
 		System.out.println("directed to login page"); 
 
 	}
-}
-    HP=new HomePage(driver);
-    boolean J = HP.joinusbtnEnable();
-    Assert.assertTrue(J, "Join us button is not present");
-    System.out.println("Join us button present: " + J);
-  
-    }
+//
+//    HP=new HomePage(driver);
+//    boolean J = HP.joinusbtnEnable();
+//    Assert.assertTrue(J, "Join us button is not present");
+//    System.out.println("Join us button present: " + J);
+//  
+//    }
     
 }

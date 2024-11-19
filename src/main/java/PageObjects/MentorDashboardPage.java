@@ -30,6 +30,12 @@ WebDriver driver;
 	@FindBy(xpath ="//li[text()=\"Library website\"]") WebElement topic_library;
 	
 		 // methods
+	//get current url
+		public String currentMentorUrlReturn() throws InterruptedException {
+			Thread.sleep(3000);
+			String url=driver.getCurrentUrl();
+			return url;
+		}
 		 public boolean dashboardTextDisplay() {
 			boolean d=  dashboard_Display.isDisplayed();
 			return d;
@@ -38,7 +44,8 @@ WebDriver driver;
 			  boolean d = logout_btn.isDisplayed();
 			return d;
 		  }
-		  public void logoutClick() {
+		  public void logoutClick() throws InterruptedException {
+			  Thread.sleep(3000);
 			  logout_btn.click();
 		  }
 		  public boolean  referenceMaterialVisible() {

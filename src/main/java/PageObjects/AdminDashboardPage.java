@@ -36,10 +36,21 @@ public class AdminDashboardPage {
 	@FindBy(xpath="//table[@aria-label=\"simple table\"]//tr//th[text()=\"Sample Project\"]//parent ::tr//button[2]") WebElement DeleteButton;
 	@FindBy(xpath="//table[@aria-label=\"simple table\"]//tr//th[text()=\"Sample Project\"]//parent ::tr//button[1]") WebElement editButton;
 	
+	//get current url
+	public String currentAdminUrlReturn() throws InterruptedException  {
+		Thread.sleep(3000);
+		String url=driver.getCurrentUrl();
+		return url;
+	}
 	//check logout button enabled
 	public boolean logoutBtnEnable() {
 		boolean e=AdminLogout_btn.isEnabled();
 		return e;
+	}
+	//clicking on logout button
+	public void logoutBtnClick() throws InterruptedException {
+		Thread.sleep(3000);
+		AdminLogout_btn.click();
 	}
 	//check mentor is displayed as menu item in the side bar
 	public  boolean mentorMenuItemDisplay() {
