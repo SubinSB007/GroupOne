@@ -1,6 +1,9 @@
 package TestCases;
 
+import java.time.Duration;
+
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import PageObjects.HomePage;
@@ -10,48 +13,46 @@ public class HomePageTest extends TestBase{
 	HomePage HP;
 
 	LoginPage LP;
-  
+	@BeforeClass
+	public void setUP() {
+		HP = new HomePage(driver);
+		LP = new LoginPage(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+	}
 	@Test (priority=1)
-	public void TC_HP_7() {
-		HP=new HomePage(driver);
+	public void testLoginBtnPresent() {
 		boolean P= HP.loginbtnpresent();
 		Assert.assertTrue(P, "Login button is not present");
-		System.out.println("Login button present: " + P);
+		
 	}
 
 
 	@Test(priority=2)
-	public void TC_HP_5() {
-		HP=new HomePage(driver);
+	public void testLogoIsDisplayed() {
 		boolean L=HP.logodisplayed();
 		Assert.assertTrue(L, "Logo is not displayed");
-		System.out.println("Logo icon present: " + L);
+		
 	}
 
 	@Test(priority=3)
-	public void TC_HP_6() {
+	public void testWelcomeMessagepresent() {
 		String message = HP.welcomemsgPresent();
-		Assert.assertEquals(message,"Welcome to ICT Academy of Kerala");
-		System.out.println("Welcome message is present: " + message);
-        Assert.assertNotNull(message, "Welcome message is missing");
-        System.out.println("Welcome message is present: " + message);
+		Assert.assertEquals(message,"Welcome to ICT Academy of Kerala");     
 	}
 
 
 	@Test(priority=4)
-	public void TC_HP_3() {
-		HP=new HomePage(driver);
+	public void testJoinUsBtnEnable() {
 		boolean J = HP.joinusbtnEnable();
 		Assert.assertTrue(J, "Join us button is not present");
-		System.out.println("Join us button present: " + J);
-
 	}
 
 	@Test(priority=5)
-	public void TC_HP_8() throws InterruptedException {
 
-		HP=new HomePage(driver);
-		LP= new LoginPage(driver);
+	
+	public void testLoginBtnFunctionality() {
+
 		HP.loginbtnClick();
 		String url= LP.getUrlcurrent();
 		Assert.assertEquals(url, "https://ictak-internship-portal-client.vercel.app/login");
@@ -65,5 +66,8 @@ public class HomePageTest extends TestBase{
 //    System.out.println("Join us button present: " + J);
 //  
 //    }
+
+    }
+
     
-}
+
