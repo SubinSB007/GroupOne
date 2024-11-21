@@ -16,7 +16,8 @@ WebDriver driver;
  @FindBy(xpath="//input[@name='password']") WebElement pass;
  @FindBy(xpath="//button[@type='submit']") WebElement log;
  
- public String getUrlcurrent() {
+ public String getUrlcurrent() throws InterruptedException {
+	 Thread.sleep(3000);
 	String url=driver.getCurrentUrl();
 	 return url;
 	 
