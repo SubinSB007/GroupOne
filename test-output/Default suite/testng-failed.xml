@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.ReferenceMaterialPageTest">
+      <class name="TestCases.MentorList">
         <methods>
-          <include name="testAddrefmaterialSubmitbtn" invocation-numbers="0"/>
+          <include name="testValidDataEntryAddMentor" invocation-numbers="0"/>
+          <include name="setUp"/>
           <include name="testSetUp"/>
-          <include name="addReference"/>
         </methods>
-      </class> <!-- TestCases.ReferenceMaterialPageTest -->
+      </class> <!-- TestCases.MentorList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
