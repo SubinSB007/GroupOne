@@ -27,8 +27,18 @@ WebDriver driver;
 	@FindBy(xpath ="//input[@id=\"topic-combo-box\"]") WebElement topic_drop;
 	@FindBy(xpath ="//li[text()=\"Library website\"]") WebElement topic_library;
 	
+
+		 // methods
+	//get current url
+		public String currentMentorUrlReturn() throws InterruptedException {
+			Thread.sleep(3000);
+			String url=driver.getCurrentUrl();
+			return url;
+		}
+
 		 // methods 
 	//check Dashboard text is displayed
+
 		 public boolean dashboardTextDisplay() {
 			boolean d=  dashboard_Display.isDisplayed();
 			return d;
@@ -39,8 +49,10 @@ WebDriver driver;
 			  boolean d = logout_btn.isDisplayed();
 			  return d;
 		  }
+			
 		  //click logout button
-		  public void logoutClick() {
+		  public void logoutClick() throws InterruptedException {
+			  Thread.sleep(3000);
 			  logout_btn.click();
 		  }
 		  //Check reference material button is visible.

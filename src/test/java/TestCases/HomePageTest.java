@@ -51,12 +51,23 @@ public class HomePageTest extends TestBase{
 	}
 
 	@Test(priority=5)
-	public void testLoginBtnFunctionality() {
+
+	
+	public void testLoginBtnFunctionality() throws InterruptedException {
 		hp.loginbtnClick();
 		String url= LP.getUrlcurrent();
 		Assert.assertEquals(url, "https://ictak-internship-portal-client.vercel.app/login");
 		System.out.println("directed to login page"); 
 
 	}
-    
-}
+//
+//    HP=new HomePage(driver);
+//    boolean J = HP.joinusbtnEnable();
+//    Assert.assertTrue(J, "Join us button is not present");
+//    System.out.println("Join us button present: " + J);
+//  
+//    }
+
+    }
+
+
