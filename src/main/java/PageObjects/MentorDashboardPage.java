@@ -31,7 +31,7 @@ WebDriver driver;
 		 // methods
 	//get current url
 		public String currentMentorUrlReturn() throws InterruptedException {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			String url=driver.getCurrentUrl();
 			return url;
 		}

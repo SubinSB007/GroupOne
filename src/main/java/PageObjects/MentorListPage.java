@@ -1,16 +1,20 @@
 package PageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MentorListPage {
 WebDriver driver;
-	
+WebDriverWait mywait;
 	public MentorListPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
@@ -82,7 +86,8 @@ WebDriver driver;
 	}
 	
 	//click add mentor button functionality
-	public void clickAddMentorButton() {
+	public void clickAddMentorButton() throws InterruptedException {
+		Thread.sleep(5000);
 		addMentorButton.click();
 	}
 	
@@ -163,7 +168,7 @@ WebDriver driver;
 	
 	//Check mentor is added to the mentor list
 	public int checkMentorIsAdded(String name) throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		int flag=0;
 		for(WebElement x:Mentor_names) {
 			String n=x.getText();
@@ -179,5 +184,12 @@ WebDriver driver;
 	public void clickCancelBtnAddDialogBox() {
 		CancelButton_AddMentorDialog.click();
 	}
-
+	//Switch to add mentor warning dialog box
+	 public String addMentorWarningAlert() {
+		 mywait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		 Alert myalert=mywait.until(ExpectedConditions.alertIsPresent());
+		 String s=myalert.getText();
+		 myalert.accept();
+		 return s;
+	 }
 }
