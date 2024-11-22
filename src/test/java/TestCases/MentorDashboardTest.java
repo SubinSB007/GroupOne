@@ -1,6 +1,5 @@
 package TestCases;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -13,94 +12,126 @@ import PageObjects.MentorDashboardPage;
 import PageObjects.ReferenceMaterialPage;
 
 public class MentorDashboardTest extends TestBase {
-	 MentorDashboardPage MDP;
-	 HomePage HP ;
-	 LoginPage LP;
-	 ReferenceMaterialPage RMP;
+	 MentorDashboardPage mdp;
+	 HomePage hp ;
+	 LoginPage lp;
+	 ReferenceMaterialPage rmp;
 	 
-	 @BeforeClass
-	 public void loginMentorDash() {
-		 HP = new HomePage(driver);
-		 LP = new LoginPage(driver);
-		 MDP= new MentorDashboardPage(driver);
-		 RMP = new ReferenceMaterialPage(driver);
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		 HP.loginbtnClick();
-		 LP.setEmail(prop.getProperty("emailmentor"));
-		 LP.setPass(prop.getProperty("passwordmentor"));
-		 LP.login();
-	 }
-	    @Test(priority = 1)
+	    @Test(priority = 1,groups= {"regression"})
 	    public void testLogoutAvailable() throws InterruptedException {
-	        boolean d = MDP.logoutVisible();
+	    	
+	    	 hp = new HomePage(driver);
+			 lp = new LoginPage(driver);
+			 mdp= new MentorDashboardPage(driver);
+			 rmp = new ReferenceMaterialPage(driver);
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+			 hp.loginbtnClick();
+			 lp.setEmail(prop.getProperty("emailmentor"));
+			 lp.setPass(prop.getProperty("passwordmentor"));
+			 lp.login();
+	        boolean d = mdp.logoutVisible();
 	        Assert.assertTrue(d);
 	    }
-	    @Test(priority = 2)
+	    
+	    @Test(priority = 2,groups= {"regression"})
 	    public void testrefMatVisibleSide() {
-	    	boolean d =MDP.referenceMaterialVisible();
-	        Assert.assertTrue(d);
+	    	
+	    	mdp= new MentorDashboardPage(driver);
+	    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	    	boolean d =mdp.referenceMaterialVisible();
+	    	Assert.assertTrue(d);
 	    }
 	   
-	    @Test(priority = 3)
+	    @Test(priority = 3,groups= {"regression"})
 	    public void testsubmissionListPage() {
-	        MDP.projectSubmitView();	       
-	        boolean s = MDP.subHeadName();
+	    	
+	    	mdp= new MentorDashboardPage(driver);
+	    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	        mdp.projectSubmitView();	       
+	        boolean s = mdp.subHeadName();
 	        Assert.assertTrue(s);	        
-	        boolean t = MDP.subHeadTopic();
+	        boolean t = mdp.subHeadTopic();
 	        Assert.assertTrue(t);	       
-	        boolean b = MDP.subHeadBatch();
+	        boolean b = mdp.subHeadBatch();
 	        Assert.assertTrue(b);	        
-	        boolean sa = MDP.subHeadStatus();
+	        boolean sa = mdp.subHeadStatus();
 	        Assert.assertTrue(sa);	        
-	        boolean a = MDP.subHeadAction();
+	        boolean a = mdp.subHeadAction();
 	        Assert.assertTrue(a);	        
 	   }
-	    @Test(priority = 4)
+	    
+	    @Test(priority = 4,groups= {"regression"})
 	    public void testBatchDropdown() throws InterruptedException {   
+	    	
+	    mdp= new MentorDashboardPage(driver);
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-	    MDP.batchBoxClick();
-	    MDP.batchJanDropClick();
-	    String S = MDP.getSelectedBatch();
+	    mdp.batchBoxClick();
+	    mdp.batchJanDropClick();
+	    String S = mdp.getSelectedBatch();
 	    Assert.assertEquals(S, "January-2024");
 	   }
-	    @Test(priority = 5)
-	    public void testTopicDropdown() {		   		    
-		    MDP.topicBoxClick();
-		    MDP.topicLibrarayClick();
-		  String T = MDP.getSelectTopic();
+	    
+	    @Test(priority = 5,groups= {"regression"})
+	    public void testTopicDropdown() {
+	    	
+	    	mdp= new MentorDashboardPage(driver);
+	    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		    mdp.topicBoxClick();
+		    mdp.topicLibrarayClick();
+		  String T = mdp.getSelectTopic();
 		  Assert.assertEquals(T, "Library website");
 	    }
-	    @Test(priority = 6)
-	    public void testRefMaterialClickable() {		    		   
-		    MDP.referenceMaterialClick();
-		    String url = RMP.refMaterialPageUrl();
-		    Assert.assertEquals(url, "https://ictak-internship-portal-client.vercel.app/reference-materials");
+	    
+	    @Test(priority = 6,groups= {"regression"})
+	    public void testRefMaterialClickable() {	
+	    	
+	    	 mdp= new MentorDashboardPage(driver);
+			 rmp = new ReferenceMaterialPage(driver);
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		    mdp.referenceMaterialClick();
+		    String url = rmp.refMaterialPageUrl();
+		    Assert.assertEquals(url, prop.getProperty("referencematerialpageurl"));
 	    }
-	    @Test(priority = 7,dependsOnMethods = {"testRefMaterialClickable"})
-	    public void testRefMatTableHeader() {	    			    
-		    boolean t = RMP.refmaterialTopicVisible();
+	    
+	    @Test(priority = 7,groups= {"regression"},dependsOnMethods = {"testRefMaterialClickable"})
+	    public void testRefMatTableHeader() {
+	    	
+	    	rmp = new ReferenceMaterialPage(driver);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		    boolean t = rmp.refmaterialTopicVisible();
 		    Assert.assertTrue(t);		   
-		    boolean M = RMP.refmaterialHeadVisible();
+		    boolean M = rmp.refmaterialHeadVisible();
 		    Assert.assertTrue(M);		    
-		    boolean A = RMP.refmaterialActionsVisible();
+		    boolean A = rmp.refmaterialActionsVisible();
 		    Assert.assertTrue(A);		    
 		    }
-	    @Test(priority = 8,dependsOnMethods = {"testRefMaterialClickable"})
-	    public void testActionsDeletebtnEnable() {	    			   
-		    boolean d = RMP.deleteButtonEnable();
+	    
+	    @Test(priority = 8,groups= {"regression"},dependsOnMethods = {"testRefMaterialClickable"})
+	    public void testActionsDeletebtnEnable() {	
+	    	
+	    	 rmp = new ReferenceMaterialPage(driver);
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		    boolean d = rmp.deleteButtonEnable();
 		    Assert.assertTrue(d);
 	    }
-	    @Test(priority = 9,dependsOnMethods = {"testRefMaterialClickable"})
-	    public void testAddRefMaterailDisplayed() {	    			   
-		    boolean p = RMP.addrefMaterial();
+	    
+	    @Test(priority = 9,groups= {"regression"},dependsOnMethods = {"testRefMaterialClickable"})
+	    public void testAddRefMaterailDisplayed() {	  
+	    	
+	    	 rmp = new ReferenceMaterialPage(driver);
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		    boolean p = rmp.addrefMaterial();
 		    Assert.assertTrue(p);
 		    
 	    }
-	    @Test(priority = 10,dependsOnMethods = {"testAddRefMaterailDisplayed"})
-	    public void testAddRefMaterailFunction() {	    			   
-		    RMP.addrefMaterialClick();
-		     String url = RMP.addRefMaterialPageUrl();
-		     Assert.assertEquals(url, "https://ictak-internship-portal-client.vercel.app/reference-materials-form");
+	    
+	    @Test(priority = 10,groups= {"regression"},dependsOnMethods = {"testAddRefMaterailDisplayed"})
+	    public void testAddRefMaterailFunction() {
+	    	 rmp = new ReferenceMaterialPage(driver);
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		    rmp.addrefMaterialClick();
+		     String url = rmp.addRefMaterialPageUrl();
+		     Assert.assertEquals(url, prop.getProperty("addreferncematerialpageurl"));
 	    }
 	    
 	}
