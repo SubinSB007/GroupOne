@@ -14,46 +14,54 @@ import Utilities.DataproviderAddrefmaterial;
 
 public class ReferenceMaterialPageTest extends TestBase{
 	
-		 MentorDashboardPage MDP;
-		 HomePage HP ;
-		 LoginPage LP;
-		 ReferenceMaterialPage RMP;
-		 @BeforeClass
-		 public void  addReference  () {
-			 
-			 HP = new HomePage(driver);
-			 LP = new LoginPage(driver);
-			 MDP = new MentorDashboardPage(driver);
-			 RMP = new ReferenceMaterialPage(driver);
-			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-			 HP.loginbtnClick();
-			 LP.setEmail(prop.getProperty("emailmentor"));
-			 LP.setPass(prop.getProperty("passwordmentor"));
-			 LP.login();
-		 }
-		@Test(dataProvider=  "testAddrefmaterial" , dataProviderClass = DataproviderAddrefmaterial.class)
+		 MentorDashboardPage mdp;
+		 HomePage hp ;
+		 LoginPage lp;
+		 ReferenceMaterialPage rmp;
+
+		@Test(groups= {"regression"},dataProvider=  "testAddrefmaterial" , dataProviderClass = DataproviderAddrefmaterial.class)
 		public void testAddrefmaterialCancelbtn(String Topic , String Reference , String Date,String Url , String status) {
-			MDP.referenceMaterialClick();
-			RMP.addrefMaterialClick();
-			RMP.enterTopic(Topic);
-			RMP.enterMaterial(Reference);
-			RMP.enterUrl(Url);
-			RMP.enterStatus(status);
-			RMP.setDate(Date);
-			Assert.assertTrue(RMP.cancelClick());
+			
+			hp = new HomePage(driver);
+			 lp = new LoginPage(driver);
+			 mdp = new MentorDashboardPage(driver);
+			 rmp = new ReferenceMaterialPage(driver);
+			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+			 hp.loginbtnClick();
+			 lp.setEmail(prop.getProperty("emailmentor"));
+			 lp.setPass(prop.getProperty("passwordmentor"));
+			 lp.login();
+			mdp.referenceMaterialClick();
+			rmp.addrefMaterialClick();
+			rmp.enterTopic(Topic);
+			rmp.enterMaterial(Reference);
+			rmp.enterUrl(Url);
+			rmp.enterStatus(status);
+			rmp.setDate(Date);
+			Assert.assertTrue(rmp.cancelClick());
 			
 		}
-		@Test(dataProvider=  "testAddrefmaterial" , dataProviderClass = DataproviderAddrefmaterial.class)
+		@Test(groups= {"regression"},dataProvider=  "testAddrefmaterial" , dataProviderClass = DataproviderAddrefmaterial.class)
 		public void testAddrefmaterialSubmitbtn(String Topic , String Reference , String Date,String Url , String status) throws InterruptedException {			
-			MDP.referenceMaterialClick();
-			RMP.addrefMaterialClick();
-			RMP.enterTopic(Topic);
-			RMP.enterMaterial(Reference);
-			RMP.enterUrl(Url);
-			RMP.enterStatus(status);
-			RMP.setDate(Date);
-			RMP.submitClick();
-			Assert.assertEquals(RMP.swtichToAlert(),"New Material added Successfully" );
+			
+			mdp = new MentorDashboardPage(driver);
+			rmp = new ReferenceMaterialPage(driver);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+			mdp.referenceMaterialClick();
+			rmp.addrefMaterialClick();
+			rmp.enterTopic(Topic);
+			rmp.enterMaterial(Reference);
+			rmp.enterUrl(Url);
+			rmp.enterStatus(status);
+			rmp.setDate(Date);
+			rmp.submitClick();
+			rmp.swtichToAlert();
+			int s=rmp.checkRefMaterialAdded(prop.getProperty("addedrefMaterial"));
+			if(s==1) {
+				Assert.assertTrue(true);
+			}else {
+				Assert.fail();
+			}
 			
 		}
 		 

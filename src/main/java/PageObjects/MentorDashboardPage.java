@@ -1,11 +1,9 @@
 package PageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class MentorDashboardPage {
 WebDriver driver;
@@ -33,7 +31,7 @@ WebDriver driver;
 		 // methods
 	//get current url
 		public String currentMentorUrlReturn() throws InterruptedException {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			String url=driver.getCurrentUrl();
 			return url;
 		}
@@ -51,13 +49,10 @@ WebDriver driver;
 			  boolean d = logout_btn.isDisplayed();
 			  return d;
 		  }
-
+			
+		  //click logout button
 		  public void logoutClick() throws InterruptedException {
 			  Thread.sleep(3000);
-
-		  //click logout button
-		  public void logoutClick() {
-
 			  logout_btn.click();
 		  }
 		  //Check reference material button is visible.

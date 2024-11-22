@@ -13,103 +13,117 @@ import Utilities.DataProviderDP;
 
 
 public class AdminDashboardTest extends TestBase{
-	HomePage HP;
-	LoginPage LP;
-	AdminDashboardPage ADP;
+	HomePage hp;
+	LoginPage lp;
+	AdminDashboardPage adp;
 	
-	@BeforeClass
-	public void adminlogin() {
-		HP=new HomePage(driver);
-		LP=new LoginPage(driver);
-		ADP=new AdminDashboardPage(driver);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-	    HP.loginbtnClick();
-			LP.setEmail("ictak@example.com");
-			LP.setPass("0000");
-			LP.login();
-	}
-	@Test(priority = 1)
+	@Test(priority = 1,groups= {"regression"})
 	public void testLogoutBtnAvailable() {
-//		ADP=new AdminDashboardPage(driver);
+		hp=new HomePage(driver);
+		lp=new LoginPage(driver);
+		adp=new AdminDashboardPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		boolean e=ADP.logoutBtnEnable();
+	    hp.loginbtnClick();
+			lp.setEmail(prop.getProperty("emailadmin"));
+			lp.setPass(prop.getProperty("passwordadmin"));
+			lp.login();
+		boolean e=adp.logoutBtnEnable();
 		Assert.assertTrue(e);
 	}
-	@Test(priority = 2)
+	
+	@Test(priority = 2,groups= {"regression"})
 	public void testProjectListHeader() {
-//		ADP=new AdminDashboardPage(driver);
+		
+		adp=new AdminDashboardPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		Assert.assertTrue(ADP.projectListHeaderProjects());
-		Assert.assertTrue(ADP.projectListHeaderdurations());
-		Assert.assertTrue(ADP.projectListHeaderActions());
+		Assert.assertTrue(adp.projectListHeaderProjects());
+		Assert.assertTrue(adp.projectListHeaderdurations());
+		Assert.assertTrue(adp.projectListHeaderActions());
 	}
-	@Test(priority=3)
+	
+	@Test(priority=3,groups= {"regression"})
 	public void testAddProjectButtonPresent() {
-//		ADP=new AdminDashboardPage(driver);
+		
+		adp=new AdminDashboardPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		Assert.assertTrue(ADP.addProjectButtonVisible());
+		Assert.assertTrue(adp.projectListHeaderProjects());
+		Assert.assertTrue(adp.addProjectButtonVisible());
 	}
-	@Test(priority=4)
+	
+	@Test(priority=4,groups= {"regression"})
 	public void testAddprojectButtonFunctinality() {
-//		ADP=new AdminDashboardPage(driver);
+		
+		adp=new AdminDashboardPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		ADP.addProjectButtonClick();
-		Assert.assertTrue(ADP.addProjectDialogTopicPresent());
-		Assert.assertTrue(ADP.addProjectDialogDurationPresent());
+		adp.addProjectButtonClick();
+		Assert.assertTrue(adp.addProjectDialogTopicPresent());
+		Assert.assertTrue(adp.addProjectDialogDurationPresent());
 	}
 	
-	@Test(priority=5,dependsOnMethods = {"testAddprojectButtonFunctinality"},dataProvider = "testAddProjectAddCancelBtn",dataProviderClass = DataProviderDP.class)
-//	@Test(dependsOnMethods = {"testAddprojectButtonFunctinality"})
+	@Test(priority=5,groups= {"regression"},dependsOnMethods = {"testAddprojectButtonFunctinality"},dataProvider = "testAddProjectAddCancelBtn",dataProviderClass = DataProviderDP.class)
 	public void testAddProjectAddbutton(String topic,String duration) throws InterruptedException {
-//		ADP=new AdminDashboardPage(driver);
+		
+		adp=new AdminDashboardPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		ADP.addProjectDialogTopicEnter(topic);
-		ADP.addTopicDialogDurationEnter(duration);
-		ADP.clickAddbtnAddProjectDialog();
-		Assert.assertEquals(ADP.getAddedTopic(),topic);
-		Assert.assertEquals(ADP.getAdddedduration(), duration);
+		adp.addProjectDialogTopicEnter(topic);
+		adp.addTopicDialogDurationEnter(duration);
+		adp.clickAddbtnAddProjectDialog();
+		int t=adp.getAddedTopic(topic);
+		int d=adp.getAdddedduration(duration);
+		if(t==1 && d==1) {
+			Assert.assertTrue(true);
+		}else {
+			Assert.fail();
+		}
+	
 	}
 	
-	@Test(priority=6,dependsOnMethods = {"testAddProjectAddbutton"},dataProvider = "testAddProjectAddCancelBtn",dataProviderClass = DataProviderDP.class)
+	@Test(priority=6,groups= {"regression"},dependsOnMethods = {"testAddProjectAddbutton"},dataProvider = "testAddProjectAddCancelBtn",dataProviderClass = DataProviderDP.class)
 	public void testDeleteButtonActions(String topic ,String duration) throws InterruptedException {
-//		ADP=new AdminDashboardPage(driver);
+		
+		adp=new AdminDashboardPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		ADP.projectDeleteButtonAction();
-		Assert.assertEquals(ADP.switchTodeleteProjectAlert(), prop.getProperty("deleteprojectalert"));
+		adp.projectDeleteButtonAction();
+		Assert.assertEquals(adp.switchTodeleteProjectAlert(), prop.getProperty("deleteprojectalert"));
 //		Assert.assertNotEquals(ADP.getAddedTopic(), topic);
 	}
 	
-	@Test(priority=7,dependsOnMethods = {"testAddprojectButtonFunctinality"},dataProvider = "testAddProjectAddCancelBtn",dataProviderClass = DataProviderDP.class)
+	@Test(priority=7,groups= {"regression"},dependsOnMethods = {"testAddprojectButtonFunctinality"},dataProvider = "testAddProjectAddCancelBtn",dataProviderClass = DataProviderDP.class)
 	public void testAddProjectCancelbutton(String topic,String duration) throws InterruptedException {
-//		ADP=new AdminDashboardPage(driver);
+		
+		adp=new AdminDashboardPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		ADP.addProjectButtonClick();
-		ADP.addProjectDialogTopicEnter(topic);
-		ADP.addTopicDialogDurationEnter(duration);
-		Assert.assertTrue(ADP.clickCancelbtnAddProjectDialog());
+		adp.addProjectButtonClick();
+		adp.addProjectDialogTopicEnter(topic);
+		adp.addTopicDialogDurationEnter(duration);
+		Assert.assertTrue(adp.clickCancelbtnAddProjectDialog());
 		
 	}
-	@Test(priority=8,dataProvider = "testAddProjectNegativedata",dataProviderClass = DataProviderDP.class)
+	
+	@Test(priority=8,groups= {"regression"},dataProvider = "testAddProjectNegativedata",dataProviderClass = DataProviderDP.class)
 	public void testAddProjectNegativeData(String topic,String duration) throws InterruptedException {
-//		ADP=new AdminDashboardPage(driver);
+		
+		adp=new AdminDashboardPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		ADP.addProjectButtonClick();
-		ADP.addProjectDialogTopicEnter(topic);
-		ADP.addTopicDialogDurationEnter(duration);
-		ADP.clickAddbtnAddProjectDialog();
-		Assert.assertEquals(ADP.switchToAdProjectdemptyAlert(), prop.getProperty("emptyaddprojectalert"));
-		ADP.clickCancelbtnAddProjectDialog();	
+		adp.addProjectButtonClick();
+		adp.addProjectDialogTopicEnter(topic);
+		adp.addTopicDialogDurationEnter(duration);
+		adp.clickAddbtnAddProjectDialog();
+		Assert.assertEquals(adp.switchToAdProjectdemptyAlert(), prop.getProperty("emptyaddprojectalert"));
+		adp.clickCancelbtnAddProjectDialog();	
 	}
-	@Test(priority=9)
+	
+	@Test(priority=9,groups= {"regression"})
 	public void testEditProjectPositive() throws InterruptedException {
-//		ADP=new AdminDashboardPage(driver);
+		
+		adp=new AdminDashboardPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		ADP.clickEditButton();
-		ADP.editTopic("Sample Test");
-		ADP.editDuration("5 months");
-		ADP.clickAddbtnAddProjectDialog();
+		adp.clickEditButton();
+		adp.editTopic("Sample Test");
+		adp.editDuration("5 months");
+		adp.clickAddbtnAddProjectDialog();
 		//ADP.clickCancelbtnAddProjectDialog();
 //		Assert.assertEquals(ADP.getEditedTopic(), "Sample Test");
 //		Assert.assertEquals(ADP.getEditedduration(), "5 months");
-	}
+		}
 }

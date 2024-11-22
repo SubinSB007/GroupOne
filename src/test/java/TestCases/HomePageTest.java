@@ -10,64 +10,60 @@ import PageObjects.HomePage;
 import PageObjects.LoginPage;
 
 public class HomePageTest extends TestBase{
-	HomePage HP;
+	HomePage hp;
+	LoginPage lp;
 
-	LoginPage LP;
-	@BeforeClass
-	public void setUP() {
-		HP = new HomePage(driver);
-		LP = new LoginPage(driver);
+
+	@Test (priority=1,groups= {"sanity","regression"})
+	public void testLoginBtnPresent() {
+		hp = new HomePage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-	}
-	@Test (priority=1)
-	public void testLoginBtnPresent() {
-		boolean P= HP.loginbtnpresent();
+		boolean P= hp.loginbtnpresent();
 		Assert.assertTrue(P, "Login button is not present");
 		
 	}
 
 
-	@Test(priority=2)
+	@Test(priority=2,groups= {"sanity","regression"})
 	public void testLogoIsDisplayed() {
-		boolean L=HP.logodisplayed();
+		hp = new HomePage(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		boolean L=hp.logodisplayed();
 		Assert.assertTrue(L, "Logo is not displayed");
 		
 	}
 
-	@Test(priority=3)
+	@Test(priority=3,groups= {"sanity","regression"})
 	public void testWelcomeMessagepresent() {
-		String message = HP.welcomemsgPresent();
+		hp = new HomePage(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		String message = hp.welcomemsgPresent();
 		Assert.assertEquals(message,"Welcome to ICT Academy of Kerala");     
 	}
 
 
-	@Test(priority=4)
+	@Test(priority=4,groups= {"sanity","regression"})
 	public void testJoinUsBtnEnable() {
-		boolean J = HP.joinusbtnEnable();
+		hp = new HomePage(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		boolean J = hp.joinusbtnEnable();
 		Assert.assertTrue(J, "Join us button is not present");
 	}
 
-	@Test(priority=5)
-
-	
-	public void testLoginBtnFunctionality() {
-
-		HP.loginbtnClick();
-		String url= LP.getUrlcurrent();
+	@Test(priority=5,groups= {"sanity","regression"})
+	public void testLoginBtnFunctionality() throws InterruptedException {
+		hp = new HomePage(driver);
+		lp = new LoginPage(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		hp.loginbtnClick();
+		String url= lp.getUrlcurrent();
 		Assert.assertEquals(url, "https://ictak-internship-portal-client.vercel.app/login");
 		System.out.println("directed to login page"); 
 
 	}
-//
-//    HP=new HomePage(driver);
-//    boolean J = HP.joinusbtnEnable();
-//    Assert.assertTrue(J, "Join us button is not present");
-//    System.out.println("Join us button present: " + J);
-//  
-//    }
+
 
     }
 
-    
 

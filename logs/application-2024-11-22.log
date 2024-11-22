@@ -1,0 +1,58 @@
+2024-11-22 12:09:23 INFO  MentorList:24 - ****Started mentorlist navigation***
+2024-11-22 12:09:29 INFO  MentorList:37 - ***clicked on mentor in the sidebar***
+2024-11-22 12:09:42 INFO  MentorList:119 - ***Started mentor adding with invalid data***
+2024-11-22 12:09:51 INFO  MentorList:119 - ***Started mentor adding with invalid data***
+2024-11-22 12:09:55 INFO  MentorList:119 - ***Started mentor adding with invalid data***
+2024-11-22 12:09:59 INFO  MentorList:119 - ***Started mentor adding with invalid data***
+2024-11-22 12:10:02 INFO  MentorList:119 - ***Started mentor adding with invalid data***
+2024-11-22 12:10:05 INFO  MentorList:119 - ***Started mentor adding with invalid data***
+2024-11-22 12:10:08 INFO  MentorList:119 - ***Started mentor adding with invalid data***
+2024-11-22 12:10:11 INFO  MentorList:119 - ***Started mentor adding with invalid data***
+2024-11-22 12:10:15 INFO  MentorList:95 - ***Started mentor adding with valid data***
+2024-11-22 12:36:33 INFO  MentorList:24 - Started mentorlist navigation
+2024-11-22 12:36:38 INFO  MentorList:37 - clicked on mentor in the sidebar
+2024-11-22 12:36:39 INFO  MentorList:43 - Started the testing of mentor list table headers
+2024-11-22 12:36:39 INFO  MentorList:53 - All mentor list headers are available
+2024-11-22 12:36:39 INFO  MentorList:58 - Start testing add mentor visibility
+2024-11-22 12:36:39 INFO  MentorList:64 - Add mentor button is visible
+2024-11-22 12:36:39 INFO  MentorList:69 - Start testing necssary fields are available in the add mentor dialog box
+2024-11-22 12:36:43 INFO  MentorList:81 - All fields are available in the add mentor dialog box
+2024-11-22 12:36:43 INFO  MentorList:86 - started testing the added project available in the topic dropdown in add mentordialog box
+2024-11-22 12:36:52 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:37:00 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:37:05 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:37:09 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:37:13 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:37:17 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:37:22 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:37:26 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:37:31 INFO  MentorList:113 - Started mentor adding with valid data
+2024-11-22 12:38:34 INFO  MentorList:24 - Started mentorlist navigation
+2024-11-22 12:38:37 INFO  MentorList:37 - clicked on mentor in the sidebar
+2024-11-22 12:38:37 INFO  MentorList:43 - Started the testing of mentor list table headers
+2024-11-22 12:38:37 INFO  MentorList:53 - All mentor list headers are available
+2024-11-22 12:38:37 INFO  MentorList:58 - Start testing add mentor visibility
+2024-11-22 12:38:37 INFO  MentorList:64 - Add mentor button is visible
+2024-11-22 12:38:37 INFO  MentorList:69 - Start testing necssary fields are available in the add mentor dialog box
+2024-11-22 12:38:44 INFO  MentorList:81 - All fields are available in the add mentor dialog box
+2024-11-22 12:38:44 INFO  MentorList:86 - started testing the added project available in the topic dropdown in add mentordialog box
+2024-11-22 12:38:54 INFO  MentorList:102 - Added project is available in the topic down in the add mentor dialog box
+2024-11-22 12:38:58 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:39:04 INFO  MentorList:152 - Click on the add button
+2024-11-22 12:39:04 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:39:12 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:39:12 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:39:12 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:39:12 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:39:12 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:39:12 INFO  MentorList:138 - Started mentor adding with invalid data
+2024-11-22 12:39:14 INFO  MentorList:113 - Started mentor adding with valid data
+2024-11-22 12:40:11 INFO  MentorList:24 - Started mentorlist navigation
+2024-11-22 12:40:14 INFO  MentorList:37 - clicked on mentor in the sidebar
+2024-11-22 12:40:14 INFO  MentorList:43 - Started the testing of mentor list table headers
+2024-11-22 12:40:14 INFO  MentorList:53 - All mentor list headers are available
+2024-11-22 12:40:14 INFO  MentorList:58 - Start testing add mentor visibility
+2024-11-22 12:40:14 INFO  MentorList:64 - Add mentor button is visible
+2024-11-22 12:40:14 INFO  MentorList:69 - Start testing necssary fields are available in the add mentor dialog box
+2024-11-22 12:40:21 INFO  MentorList:81 - All fields are available in the add mentor dialog box
+2024-11-22 12:40:21 INFO  MentorList:86 - started testing the added project available in the topic dropdown in add mentordialog box
