@@ -13,12 +13,13 @@ import Utilities.DataProviderLogin;
 
 public class LoginTest extends TestBase{
 
-	LoginPage lp=null;
-	HomePage hp=null;
+	LoginPage lp;
+	HomePage hp;
 	AdminDashboardPage adp;
 	MentorDashboardPage mdp;
 	ReferenceMaterialPage rmp;
-	@Test
+	
+	@Test(priority=1,groups= {"sanity","regression"})
 	public void testAdminLogin()throws Exception {
 	    lp = new LoginPage(driver);
 	    hp = new HomePage(driver);
@@ -29,10 +30,11 @@ public class LoginTest extends TestBase{
 		lp.login();
 		String url = adp.currentAdminUrlReturn();
 		adp.logoutBtnClick();
-		Assert.assertEquals(url,"https://ictak-internship-portal-client.vercel.app/admin");
+		Assert.assertEquals(url,prop.getProperty("admindashboardurl"));
 	
 		}
-	@Test
+	
+	@Test(priority=2,groups= {"sanity","regression"})
 	public void testMentorLogin()throws Exception {
 	    lp = new LoginPage(driver);
 	    hp = new HomePage(driver);
@@ -43,10 +45,11 @@ public class LoginTest extends TestBase{
 		lp.login();
 		String url = mdp.currentMentorUrlReturn();
 		mdp.logoutClick();
-		Assert.assertEquals(url, "https://ictak-internship-portal-client.vercel.app/mentordashboard");
+		Assert.assertEquals(url, prop.getProperty("mentordashboardurl"));
 	}
-	@Test(dataProvider = "testadminlogindata",dataProviderClass = DataProviderLogin.class )
-	public void testAdminLoginNegative(String email,String password)throws Exception {
+	
+	@Test(priority=3,groups= {"sanity","regression"},dataProvider = "testlogindataNegative",dataProviderClass = DataProviderLogin.class )
+	public void testLoginNegative(String email,String password)throws Exception {
 	    lp = new LoginPage(driver);
 	    hp = new HomePage(driver);
 	    hp.loginbtnClick();
@@ -54,9 +57,20 @@ public class LoginTest extends TestBase{
 		lp.setPass(password);
 		lp.login();
 		String url = lp.getUrlcurrent();
-		Assert.assertEquals(url, "https://ictak-internship-portal-client.vercel.app/login");
+		lp.navigateBack();
+		Assert.assertEquals(url,prop.getProperty("loginpageurl"));
 	}
+	
+	@Test(priority=4,groups= {"sanity","regression"})
+		public void testSignUpEnabled() {
+			 lp = new LoginPage(driver);
+			 hp = new HomePage(driver);
+			 hp.loginbtnClick();
+			 boolean s=lp.testSignupEnabled();
+			 Assert.assertTrue(s);
+			
 		}
+	}
 
 		
 	

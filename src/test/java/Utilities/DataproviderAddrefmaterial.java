@@ -11,7 +11,7 @@ public class DataproviderAddrefmaterial {
 
 	    ExcelUtility xlutil = new ExcelUtility(path); //creating an object for XLUtility and passing the path of the excel file
 
-	    int totalrows = xlutil.getRowCount("Sheet1"); //it will return value starting from index 1
+	    int totalrows = xlutil.getRowCount("Sheet1"); //it will return value starting from index 0
 	    int totalcols = xlutil.getCellCount("Sheet1", 0); //it will return value starts from 0ne
 	    String Addprojectdata[][] = new String[totalrows][totalcols]; //created for two dimension array which can store, doesn't need the header row of excel file
 
