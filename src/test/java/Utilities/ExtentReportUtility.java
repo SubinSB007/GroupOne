@@ -32,20 +32,20 @@ public class ExtentReportUtility implements ITestListener{
 		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); // time stamp
 
-		repName = "Test-Report-" + timeStamp + ".html";
+		repName = "GroupOne-Automation-Test-Report-" + timeStamp + ".html";
 
 		sparkReporter = new ExtentSparkReporter(".\\Reports\\" + repName); // specify location of the report
 
 		sparkReporter.config().setDocumentTitle("Internship Portal group one automation Report"); // Title of report
-		sparkReporter.config().setReportName("Internship Portal functional Testing"); // name of the report
+		sparkReporter.config().setReportName("Internship Portal Admin and Mentor Automation Test"); // name of the report
 		sparkReporter.config().setTheme(Theme.DARK);
 
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		extent.setSystemInfo("Group", "1");
 		extent.setSystemInfo("Application", "Ictak Internship portal Admin and Mentor View");
-		extent.setSystemInfo("Module", "Login");
-		extent.setSystemInfo("User Name", System.getProperty("user.name"));
+		//extent.setSystemInfo("Module", "Login");
+		extent.setSystemInfo("User Name", System.getProperty("user.name"));//retrieves the username of the system where the Java application is running
 		extent.setSystemInfo("Environment", "QA");
 
 		String os = testContext.getCurrentXmlTest().getParameter("OS");
@@ -94,14 +94,14 @@ public class ExtentReportUtility implements ITestListener{
 		extent.flush();
 		
 		//To open the report at the end of test execution dynamically
-		String pathOfExtentReport = System.getProperty("user.dir") + "\\reports\\" + repName;
-		File extentReport = new File(pathOfExtentReport);
-
-		try {
-			Desktop.getDesktop().browse(extentReport.toURI());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		String pathOfExtentReport = System.getProperty("user.dir") + "\\reports\\" + repName;
+//		File extentReport = new File(pathOfExtentReport);
+//
+//		try {
+//			Desktop.getDesktop().browse(extentReport.toURI());
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 }
 
