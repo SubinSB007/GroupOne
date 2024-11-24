@@ -58,8 +58,7 @@ public class HomePageTest extends TestBase{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		hp.loginbtnClick();
 		String url= lp.getUrlcurrent();
-		Assert.assertEquals(url, "https://ictak-internship-portal-client.vercel.app/login");
-		System.out.println("directed to login page"); 
+		Assert.assertEquals(url, prop.getProperty("loginpageurl"));
 
 	}
 

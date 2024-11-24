@@ -11,10 +11,10 @@ public HomePage(WebDriver driver) {
 	PageFactory.initElements(driver, this);
 }
 	//locators
-    @FindBy (className = "btn1") WebElement loginBtn ;
+    @FindBy (xpath="//button[@class=\"btn1\"]") WebElement loginBtn ;
     @FindBy (xpath = "//img[@class='logo']") WebElement Logo;
     @FindBy (xpath= "//H1[text()='Welcome to ICT Academy of Kerala']") WebElement  welcomeMsg;
-    @FindBy (className = "btn2") WebElement joinusBtn;
+    @FindBy (xpath="//button[@class=\"btn2\"]") WebElement joinusBtn;
     
 	//methods
 	public boolean loginbtnpresent() {

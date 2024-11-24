@@ -10,12 +10,11 @@
     <classes>
       <class name="TestCases.MentorList"/>
       <class name="TestCases.MentorDashboardTest"/>
-      <class name="PageObjects.LoginPage"/>
       <class name="TestCases.HomePageTest"/>
       <class name="TestCases.AdminDashboardTest"/>
       <class name="TestCases.LoginTest"/>
-      <class name="TestCases.TestBase"/>
       <class name="TestCases.ReferenceMaterialPageTest"/>
     </classes>
+    </parameter>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
