@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+    <listener class-name="Utilities.ExtentReportUtility" />
+  </listeners>
+
+ <!-- <test thread-count="5" name="Linux-chrome">
+    <parameter name="Browser" value="chrome" />
+    <parameter name="OS" value="Linux" />
+    <classes>
+      <class name="TestCases.LoginTest" />
+    
+       <class name="TestCases.HomePageTest" />
+      <class name="TestCases.AdminDashboardTest" />
+      <class name="TestCases.ReferenceMaterialPageTest" />
+      <class name="TestCases.MentorDashboardTest" />
+      <class name="TestCases.MentorList" />
+    </classes>
+  </test> -->
+
+ <test thread-count="5" name="Linux-firefox">
+    <parameter name="Browser" value="firefox" />
+    <parameter name="OS" value="Linux" />
+    <classes>
+      <class name="TestCases.LoginTest" />
+      <class name="TestCases.HomePageTest" />
+      <class name="TestCases.AdminDashboardTest" />
+      <class name="TestCases.ReferenceMaterialPageTest" />
+      <class name="TestCases.MentorDashboardTest" />
+      <class name="TestCases.MentorList" /> 
+    </classes>
+  </test> 
+</suite>
+
