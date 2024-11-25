@@ -17,28 +17,37 @@ WebDriver driver;
  @FindBy(xpath="//button[@type='submit']") WebElement log;
  @FindBy(xpath="//a[text()=\"Don’t have an account yet? Sign Up Now\"]") WebElement signup_btn;
  
+ 
+ //get the url
  public String getUrlcurrent() throws InterruptedException {
 	 Thread.sleep(3000);
 	String url=driver.getCurrentUrl();
 	 return url;
 	 }
  
+ //enter email in email box
 	public void setEmail(String emailid){
 	email.sendKeys(emailid);
 	}
 	
+	//enter password in the password box
     public void setPass(String password){
     	
     pass.sendKeys(password);
     }
     
+    //click login button
     public void login(){
     	
     	log.click();
     }
+    
+    //navigate back to home page
     public void navigateBack() {
     	driver.navigate().back();
     }
+    
+    //check sign up button is enabled
 	public boolean testSignupEnabled() {
 		boolean t=signup_btn.isEnabled();
 		return t;

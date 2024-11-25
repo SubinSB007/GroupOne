@@ -17,20 +17,29 @@ public HomePage(WebDriver driver) {
     @FindBy (xpath="//button[@class=\"btn2\"]") WebElement joinusBtn;
     
 	//methods
+    
+    //check login button is present
 	public boolean loginbtnpresent() {
 	return loginBtn.isDisplayed();
 	
     }
 	
+	//check logo is displayed
 	public boolean logodisplayed() {
 		return Logo.isDisplayed();
 	    }
+	
+	//check welcome message is present
 	public String welcomemsgPresent() {
 		return welcomeMsg.getText();
 	    }
+	
+	//check join us button is enabled
 	public boolean joinusbtnEnable() {
 		return joinusBtn.isEnabled();
 	}
+	
+	//click the login button
 	public void loginbtnClick() {
 		loginBtn.click();
 	}
