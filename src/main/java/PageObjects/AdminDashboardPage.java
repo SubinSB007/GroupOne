@@ -67,7 +67,8 @@ public class AdminDashboardPage {
 	}
 	
 	//click on the mentor in the side bar
-	public void mentorMenuItemClick() {
+	public void mentorMenuItemClick() throws InterruptedException {
+		Thread.sleep(2000);
 		mentorMenuItemSide.click();
 	}
 	

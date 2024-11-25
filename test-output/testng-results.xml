@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="54" passed="53" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-25T08:17:02 IST" name="Suite" finished-at="2024-11-25T08:22:01 IST" duration-ms="298663">
+    <groups>
+      <group name="regression">
+        <method signature="AdminDashboardTest.testAddProjectButtonPresent()[pri:3, instance:TestCases.AdminDashboardTest@6069db50]" name="testAddProjectButtonPresent" class="TestCases.AdminDashboardTest"/>
+        <method signature="AdminDashboardTest.testAddProjectNegativeData(java.lang.String,java.lang.String)[pri:8, instance:TestCases.AdminDashboardTest@6069db50]" name="testAddProjectNegativeData" class="TestCases.AdminDashboardTest"/>
+        <method signature="AdminDashboardTest.testAddprojectButtonFunctinality()[pri:4, instance:TestCases.AdminDashboardTest@6069db50]" name="testAddprojectButtonFunctinality" class="TestCases.AdminDashboardTest"/>
+        <method signature="AdminDashboardTest.testAddProjectAddbutton(java.lang.String,java.lang.String)[pri:5, instance:TestCases.AdminDashboardTest@6069db50]" name="testAddProjectAddbutton" class="TestCases.AdminDashboardTest"/>
+        <method signature="AdminDashboardTest.testAddProjectCancelbutton(java.lang.String,java.lang.String)[pri:7, instance:TestCases.AdminDashboardTest@6069db50]" name="testAddProjectCancelbutton" class="TestCases.AdminDashboardTest"/>
+        <method signature="AdminDashboardTest.testDeleteButtonActions(java.lang.String,java.lang.String)[pri:6, instance:TestCases.AdminDashboardTest@6069db50]" name="testDeleteButtonActions" class="TestCases.AdminDashboardTest"/>
+        <method signature="AdminDashboardTest.testEditProjectPositive()[pri:9, instance:TestCases.AdminDashboardTest@6069db50]" name="testEditProjectPositive" class="TestCases.AdminDashboardTest"/>
+        <method signature="AdminDashboardTest.testLogoutBtnAvailable()[pri:1, instance:TestCases.AdminDashboardTest@6069db50]" name="testLogoutBtnAvailable" class="TestCases.AdminDashboardTest"/>
+        <method signature="AdminDashboardTest.testProjectListHeader()[pri:2, instance:TestCases.AdminDashboardTest@6069db50]" name="testProjectListHeader" class="TestCases.AdminDashboardTest"/>
+        <method signature="MentorDashboardTest.testBatchDropdown()[pri:4, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testBatchDropdown" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testLogoutAvailable()[pri:1, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testLogoutAvailable" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testRefMaterialClickable()[pri:6, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testRefMaterialClickable" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testActionsDeletebtnEnable()[pri:8, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testActionsDeletebtnEnable" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testAddRefMaterailDisplayed()[pri:9, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testAddRefMaterailDisplayed" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testAddRefMaterailFunction()[pri:10, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testAddRefMaterailFunction" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testRefMatTableHeader()[pri:7, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testRefMatTableHeader" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testTopicDropdown()[pri:5, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testTopicDropdown" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testrefMatVisibleSide()[pri:2, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testrefMatVisibleSide" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testsubmissionListPage()[pri:3, instance:TestCases.MentorDashboardTest@1b7cc17c]" name="testsubmissionListPage" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorList.testAddMentorDialogBox()[pri:4, instance:TestCases.MentorList@4efbca5a]" name="testAddMentorDialogBox" class="TestCases.MentorList"/>
+        <method signature="MentorList.testAddedProjectTopicDropdown()[pri:5, instance:TestCases.MentorList@4efbca5a]" name="testAddedProjectTopicDropdown" class="TestCases.MentorList"/>
+        <method signature="MentorList.testAddmentorButtonVisible()[pri:3, instance:TestCases.MentorList@4efbca5a]" name="testAddmentorButtonVisible" class="TestCases.MentorList"/>
+        <method signature="MentorList.testInvalidDataAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:TestCases.MentorList@4efbca5a]" name="testInvalidDataAddMentor" class="TestCases.MentorList"/>
+        <method signature="MentorList.testMentorListHeader()[pri:2, instance:TestCases.MentorList@4efbca5a]" name="testMentorListHeader" class="TestCases.MentorList"/>
+        <method signature="MentorList.testMentorListPageNavigation()[pri:1, instance:TestCases.MentorList@4efbca5a]" name="testMentorListPageNavigation" class="TestCases.MentorList"/>
+        <method signature="MentorList.testValidDataEntryAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:TestCases.MentorList@4efbca5a]" name="testValidDataEntryAddMentor" class="TestCases.MentorList"/>
+        <method signature="ReferenceMaterialPageTest.testAddrefmaterialCancelbtn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.ReferenceMaterialPageTest@59662a0b]" name="testAddrefmaterialCancelbtn" class="TestCases.ReferenceMaterialPageTest"/>
+        <method signature="ReferenceMaterialPageTest.testAddrefmaterialSubmitbtn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.ReferenceMaterialPageTest@59662a0b]" name="testAddrefmaterialSubmitbtn" class="TestCases.ReferenceMaterialPageTest"/>
+        <method signature="HomePageTest.testJoinUsBtnEnable()[pri:4, instance:TestCases.HomePageTest@57a3af25]" name="testJoinUsBtnEnable" class="TestCases.HomePageTest"/>
+        <method signature="HomePageTest.testLoginBtnFunctionality()[pri:5, instance:TestCases.HomePageTest@57a3af25]" name="testLoginBtnFunctionality" class="TestCases.HomePageTest"/>
+        <method signature="HomePageTest.testLoginBtnPresent()[pri:1, instance:TestCases.HomePageTest@57a3af25]" name="testLoginBtnPresent" class="TestCases.HomePageTest"/>
+        <method signature="HomePageTest.testLogoIsDisplayed()[pri:2, instance:TestCases.HomePageTest@57a3af25]" name="testLogoIsDisplayed" class="TestCases.HomePageTest"/>
+        <method signature="HomePageTest.testWelcomeMessagepresent()[pri:3, instance:TestCases.HomePageTest@57a3af25]" name="testWelcomeMessagepresent" class="TestCases.HomePageTest"/>
+        <method signature="LoginTest.testAdminLogin()[pri:1, instance:TestCases.LoginTest@223191a6]" name="testAdminLogin" class="TestCases.LoginTest"/>
+        <method signature="LoginTest.testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" name="testLoginNegative" class="TestCases.LoginTest"/>
+        <method signature="LoginTest.testMentorLogin()[pri:2, instance:TestCases.LoginTest@223191a6]" name="testMentorLogin" class="TestCases.LoginTest"/>
+        <method signature="LoginTest.testSignUpEnabled()[pri:4, instance:TestCases.LoginTest@223191a6]" name="testSignUpEnabled" class="TestCases.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="HomePageTest.testJoinUsBtnEnable()[pri:4, instance:TestCases.HomePageTest@57a3af25]" name="testJoinUsBtnEnable" class="TestCases.HomePageTest"/>
+        <method signature="HomePageTest.testLoginBtnFunctionality()[pri:5, instance:TestCases.HomePageTest@57a3af25]" name="testLoginBtnFunctionality" class="TestCases.HomePageTest"/>
+        <method signature="HomePageTest.testLoginBtnPresent()[pri:1, instance:TestCases.HomePageTest@57a3af25]" name="testLoginBtnPresent" class="TestCases.HomePageTest"/>
+        <method signature="HomePageTest.testLogoIsDisplayed()[pri:2, instance:TestCases.HomePageTest@57a3af25]" name="testLogoIsDisplayed" class="TestCases.HomePageTest"/>
+        <method signature="HomePageTest.testWelcomeMessagepresent()[pri:3, instance:TestCases.HomePageTest@57a3af25]" name="testWelcomeMessagepresent" class="TestCases.HomePageTest"/>
+        <method signature="LoginTest.testAdminLogin()[pri:1, instance:TestCases.LoginTest@223191a6]" name="testAdminLogin" class="TestCases.LoginTest"/>
+        <method signature="LoginTest.testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" name="testLoginNegative" class="TestCases.LoginTest"/>
+        <method signature="LoginTest.testMentorLogin()[pri:2, instance:TestCases.LoginTest@223191a6]" name="testMentorLogin" class="TestCases.LoginTest"/>
+        <method signature="LoginTest.testSignUpEnabled()[pri:4, instance:TestCases.LoginTest@223191a6]" name="testSignUpEnabled" class="TestCases.LoginTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-11-25T08:17:02 IST" name="RegressionTest" finished-at="2024-11-25T08:22:01 IST" duration-ms="298663">
+      <class name="TestCases.ReferenceMaterialPageTest">
+        <test-method is-config="true" signature="testSetUp(java.lang.String,java.lang.String)[pri:0, instance:TestCases.ReferenceMaterialPageTest@59662a0b]" started-at="2024-11-25T08:21:42 IST" name="testSetUp" finished-at="2024-11-25T08:21:45 IST" duration-ms="3236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="testAddrefmaterialCancelbtn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.ReferenceMaterialPageTest@59662a0b]" started-at="2024-11-25T08:21:45 IST" name="testAddrefmaterialCancelbtn" data-provider="testAddrefmaterial" finished-at="2024-11-25T08:21:52 IST" duration-ms="6687" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Git]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Git Tutorial]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[31102024]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ok]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddrefmaterialCancelbtn -->
+        <test-method signature="testAddrefmaterialSubmitbtn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.ReferenceMaterialPageTest@59662a0b]" started-at="2024-11-25T08:21:52 IST" name="testAddrefmaterialSubmitbtn" data-provider="testAddrefmaterial" finished-at="2024-11-25T08:22:00 IST" duration-ms="8274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Git]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Git Tutorial]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[31102024]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ok]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddrefmaterialSubmitbtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.ReferenceMaterialPageTest@59662a0b]" started-at="2024-11-25T08:22:00 IST" name="tearDown" finished-at="2024-11-25T08:22:01 IST" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.ReferenceMaterialPageTest -->
+      <class name="TestCases.MentorList">
+        <test-method is-config="true" signature="testSetUp(java.lang.String,java.lang.String)[pri:0, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:19:35 IST" name="testSetUp" finished-at="2024-11-25T08:19:37 IST" duration-ms="2257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="testMentorListPageNavigation()[pri:1, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:19:37 IST" name="testMentorListPageNavigation" finished-at="2024-11-25T08:19:43 IST" duration-ms="5556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMentorListPageNavigation -->
+        <test-method signature="testMentorListHeader()[pri:2, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:19:43 IST" name="testMentorListHeader" finished-at="2024-11-25T08:19:43 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMentorListHeader -->
+        <test-method signature="testAddmentorButtonVisible()[pri:3, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:19:43 IST" name="testAddmentorButtonVisible" finished-at="2024-11-25T08:19:43 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddmentorButtonVisible -->
+        <test-method signature="testAddMentorDialogBox()[pri:4, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:19:43 IST" name="testAddMentorDialogBox" finished-at="2024-11-25T08:19:49 IST" duration-ms="6197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddMentorDialogBox -->
+        <test-method signature="testAddedProjectTopicDropdown()[pri:5, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:19:49 IST" name="testAddedProjectTopicDropdown" finished-at="2024-11-25T08:20:07 IST" duration-ms="18025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddedProjectTopicDropdown -->
+        <test-method signature="testInvalidDataAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:20:09 IST" name="testInvalidDataAddMentor" data-provider="testAddMentorInValid" finished-at="2024-11-25T08:20:15 IST" duration-ms="6266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidDataAddMentor -->
+        <test-method signature="testInvalidDataAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:20:15 IST" name="testInvalidDataAddMentor" data-provider="testAddMentorInValid" finished-at="2024-11-25T08:20:23 IST" duration-ms="8064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adolf Hitler]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Adolfhitler@mentor.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678A!
+]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MERN Stack Web Development]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidDataAddMentor -->
+        <test-method signature="testInvalidDataAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:20:23 IST" name="testInvalidDataAddMentor" data-provider="testAddMentorInValid" finished-at="2024-11-25T08:20:31 IST" duration-ms="8041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adolf Hitler]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Adolfhitler@mentor.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678901]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678A!
+]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MERN Stack Web Development]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidDataAddMentor -->
+        <test-method signature="testInvalidDataAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:20:31 IST" name="testInvalidDataAddMentor" data-provider="testAddMentorInValid" finished-at="2024-11-25T08:20:39 IST" duration-ms="7965" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adolf Hitler]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Adolfhitler@mentor.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678A!
+]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678A!
+]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MERN Stack Web Development]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidDataAddMentor -->
+        <test-method signature="testInvalidDataAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:20:39 IST" name="testInvalidDataAddMentor" data-provider="testAddMentorInValid" finished-at="2024-11-25T08:20:47 IST" duration-ms="7892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adolf Hitler]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Adolfhitler@mentor.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[adfhgg#$%^]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678A!
+]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MERN Stack Web Development]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidDataAddMentor -->
+        <test-method signature="testInvalidDataAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:20:47 IST" name="testInvalidDataAddMentor" data-provider="testAddMentorInValid" finished-at="2024-11-25T08:20:55 IST" duration-ms="8038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adolf Hitler]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Adolfhitler@mentor.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MERN Stack Web Development]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidDataAddMentor -->
+        <test-method signature="testInvalidDataAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:20:55 IST" name="testInvalidDataAddMentor" data-provider="testAddMentorInValid" finished-at="2024-11-25T08:21:05 IST" duration-ms="9658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adolf Hitler]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Adolfhitler@mentor.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MERN Stack Web Development]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidDataAddMentor -->
+        <test-method signature="testInvalidDataAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:21:05 IST" name="testInvalidDataAddMentor" data-provider="testAddMentorInValid" finished-at="2024-11-25T08:21:13 IST" duration-ms="8882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adolf Hitler]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Adolfhitler@mentor.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678A]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MERN Stack Web Development]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidDataAddMentor -->
+        <test-method signature="testValidDataEntryAddMentor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:21:14 IST" name="testValidDataEntryAddMentor" data-provider="testAddMentorValid" finished-at="2024-11-25T08:21:24 IST" duration-ms="9779" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adolf Hitler]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Adolfhitler@mentor.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678A!
+]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[MERN Stack Web Development]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Server error}
+  (Session info: chrome=131.0.6778.86): Server error
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50c9bbf7727f66da157040aaac9d482e, findElements {using=xpath, value=//table[@aria-label="simple table"]//tbody//th}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52684}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52684/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50c9bbf7727f66da157040aaac9d482e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Server error}
+  (Session info: chrome=131.0.6778.86): Server error
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50c9bbf7727f66da157040aaac9d482e, findElements {using=xpath, value=//table[@aria-label="simple table"]//tbody//th}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52684}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52684/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50c9bbf7727f66da157040aaac9d482e
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+at jdk.proxy2/jdk.proxy2.$Proxy31.iterator(Unknown Source)
+at PageObjects.MentorListPage.checkMentorIsAdded(MentorListPage.java:173)
+at TestCases.MentorList.testValidDataEntryAddMentor(MentorList.java:125)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidDataEntryAddMentor -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.MentorList@4efbca5a]" started-at="2024-11-25T08:21:24 IST" name="tearDown" finished-at="2024-11-25T08:21:24 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.MentorList -->
+      <class name="TestCases.LoginTest">
+        <test-method is-config="true" signature="testSetUp(java.lang.String,java.lang.String)[pri:0, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:12 IST" name="testSetUp" finished-at="2024-11-25T08:17:14 IST" duration-ms="2736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="testAdminLogin()[pri:1, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:14 IST" name="testAdminLogin" finished-at="2024-11-25T08:17:23 IST" duration-ms="8710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdminLogin -->
+        <test-method signature="testMentorLogin()[pri:2, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:23 IST" name="testMentorLogin" finished-at="2024-11-25T08:17:33 IST" duration-ms="9536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMentorLogin -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:35 IST" name="testLoginNegative" data-provider="testlogindataNegative" finished-at="2024-11-25T08:17:38 IST" duration-ms="3611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:38 IST" name="testLoginNegative" data-provider="testlogindataNegative" finished-at="2024-11-25T08:17:42 IST" duration-ms="3637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:42 IST" name="testLoginNegative" data-provider="testlogindataNegative" finished-at="2024-11-25T08:17:46 IST" duration-ms="3851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ictak@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:46 IST" name="testLoginNegative" data-provider="testlogindataNegative" finished-at="2024-11-25T08:17:49 IST" duration-ms="3769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ictak@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:50 IST" name="testLoginNegative" data-provider="testlogindataNegative" finished-at="2024-11-25T08:17:53 IST" duration-ms="3741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ictkk@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:53 IST" name="testLoginNegative" data-provider="testlogindataNegative" finished-at="2024-11-25T08:17:57 IST" duration-ms="3679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anandhu@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:17:57 IST" name="testLoginNegative" data-provider="testlogindataNegative" finished-at="2024-11-25T08:18:01 IST" duration-ms="3691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678A!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:18:01 IST" name="testLoginNegative" data-provider="testlogindataNegative" finished-at="2024-11-25T08:18:04 IST" duration-ms="3819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anandhu123@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678A!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method signature="testLoginNegative(java.lang.String,java.lang.String)[pri:3, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:18:04 IST" name="testLoginNegative" data-provider="testlogindataNegative" finished-at="2024-11-25T08:18:08 IST" duration-ms="3761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anandhu@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678AB!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginNegative -->
+        <test-method signature="testSignUpEnabled()[pri:4, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:18:08 IST" name="testSignUpEnabled" finished-at="2024-11-25T08:18:08 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpEnabled -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.LoginTest@223191a6]" started-at="2024-11-25T08:18:08 IST" name="tearDown" finished-at="2024-11-25T08:18:09 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.LoginTest -->
+      <class name="TestCases.AdminDashboardTest">
+        <test-method is-config="true" signature="testSetUp(java.lang.String,java.lang.String)[pri:0, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:18:09 IST" name="testSetUp" finished-at="2024-11-25T08:18:12 IST" duration-ms="3447" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="testLogoutBtnAvailable()[pri:1, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:18:12 IST" name="testLogoutBtnAvailable" finished-at="2024-11-25T08:18:14 IST" duration-ms="2121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutBtnAvailable -->
+        <test-method signature="testProjectListHeader()[pri:2, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:18:14 IST" name="testProjectListHeader" finished-at="2024-11-25T08:18:14 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProjectListHeader -->
+        <test-method signature="testAddProjectButtonPresent()[pri:3, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:18:14 IST" name="testAddProjectButtonPresent" finished-at="2024-11-25T08:18:15 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectButtonPresent -->
+        <test-method signature="testAddprojectButtonFunctinality()[pri:4, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:18:15 IST" name="testAddprojectButtonFunctinality" finished-at="2024-11-25T08:18:15 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddprojectButtonFunctinality -->
+        <test-method signature="testAddProjectAddbutton(java.lang.String,java.lang.String)[pri:5, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:18:15 IST" name="testAddProjectAddbutton" data-provider="testAddProjectAddCancelBtn" finished-at="2024-11-25T08:18:43 IST" depends-on-methods="TestCases.AdminDashboardTest.testAddprojectButtonFunctinality" duration-ms="28011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sample Project]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3 months]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectAddbutton -->
+        <test-method signature="testDeleteButtonActions(java.lang.String,java.lang.String)[pri:6, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:18:43 IST" name="testDeleteButtonActions" data-provider="testAddProjectAddCancelBtn" finished-at="2024-11-25T08:18:46 IST" depends-on-methods="TestCases.AdminDashboardTest.testAddProjectAddbutton" duration-ms="3126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sample Project]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3 months]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteButtonActions -->
+        <test-method signature="testAddProjectCancelbutton(java.lang.String,java.lang.String)[pri:7, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:18:46 IST" name="testAddProjectCancelbutton" data-provider="testAddProjectAddCancelBtn" finished-at="2024-11-25T08:19:00 IST" depends-on-methods="TestCases.AdminDashboardTest.testAddprojectButtonFunctinality" duration-ms="13492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sample Project]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3 months]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectCancelbutton -->
+        <test-method signature="testAddProjectNegativeData(java.lang.String,java.lang.String)[pri:8, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:19:00 IST" name="testAddProjectNegativeData" data-provider="testAddProjectNegativedata" finished-at="2024-11-25T08:19:04 IST" duration-ms="3995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectNegativeData -->
+        <test-method signature="testAddProjectNegativeData(java.lang.String,java.lang.String)[pri:8, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:19:04 IST" name="testAddProjectNegativeData" data-provider="testAddProjectNegativedata" finished-at="2024-11-25T08:19:13 IST" duration-ms="8591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[git sample]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectNegativeData -->
+        <test-method signature="testAddProjectNegativeData(java.lang.String,java.lang.String)[pri:8, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:19:13 IST" name="testAddProjectNegativeData" data-provider="testAddProjectNegativedata" finished-at="2024-11-25T08:19:21 IST" duration-ms="7774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5 months]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProjectNegativeData -->
+        <test-method signature="testEditProjectPositive()[pri:9, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:19:21 IST" name="testEditProjectPositive" finished-at="2024-11-25T08:19:35 IST" duration-ms="14022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditProjectPositive -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.AdminDashboardTest@6069db50]" started-at="2024-11-25T08:19:35 IST" name="tearDown" finished-at="2024-11-25T08:19:35 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.AdminDashboardTest -->
+      <class name="TestCases.HomePageTest">
+        <test-method is-config="true" signature="testSetUp(java.lang.String,java.lang.String)[pri:0, instance:TestCases.HomePageTest@57a3af25]" started-at="2024-11-25T08:17:03 IST" name="testSetUp" finished-at="2024-11-25T08:17:07 IST" duration-ms="4780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="testLoginBtnPresent()[pri:1, instance:TestCases.HomePageTest@57a3af25]" started-at="2024-11-25T08:17:07 IST" name="testLoginBtnPresent" finished-at="2024-11-25T08:17:08 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginBtnPresent -->
+        <test-method signature="testLogoIsDisplayed()[pri:2, instance:TestCases.HomePageTest@57a3af25]" started-at="2024-11-25T08:17:08 IST" name="testLogoIsDisplayed" finished-at="2024-11-25T08:17:08 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoIsDisplayed -->
+        <test-method signature="testWelcomeMessagepresent()[pri:3, instance:TestCases.HomePageTest@57a3af25]" started-at="2024-11-25T08:17:08 IST" name="testWelcomeMessagepresent" finished-at="2024-11-25T08:17:08 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWelcomeMessagepresent -->
+        <test-method signature="testJoinUsBtnEnable()[pri:4, instance:TestCases.HomePageTest@57a3af25]" started-at="2024-11-25T08:17:08 IST" name="testJoinUsBtnEnable" finished-at="2024-11-25T08:17:08 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJoinUsBtnEnable -->
+        <test-method signature="testLoginBtnFunctionality()[pri:5, instance:TestCases.HomePageTest@57a3af25]" started-at="2024-11-25T08:17:08 IST" name="testLoginBtnFunctionality" finished-at="2024-11-25T08:17:11 IST" duration-ms="3265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginBtnFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.HomePageTest@57a3af25]" started-at="2024-11-25T08:17:11 IST" name="tearDown" finished-at="2024-11-25T08:17:12 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.HomePageTest -->
+      <class name="TestCases.MentorDashboardTest">
+        <test-method is-config="true" signature="testSetUp(java.lang.String,java.lang.String)[pri:0, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:24 IST" name="testSetUp" finished-at="2024-11-25T08:21:27 IST" duration-ms="2763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="testLogoutAvailable()[pri:1, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:27 IST" name="testLogoutAvailable" finished-at="2024-11-25T08:21:32 IST" duration-ms="4320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutAvailable -->
+        <test-method signature="testrefMatVisibleSide()[pri:2, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:32 IST" name="testrefMatVisibleSide" finished-at="2024-11-25T08:21:32 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testrefMatVisibleSide -->
+        <test-method signature="testsubmissionListPage()[pri:3, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:32 IST" name="testsubmissionListPage" finished-at="2024-11-25T08:21:32 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsubmissionListPage -->
+        <test-method signature="testBatchDropdown()[pri:4, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:32 IST" name="testBatchDropdown" finished-at="2024-11-25T08:21:35 IST" duration-ms="3440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchDropdown -->
+        <test-method signature="testTopicDropdown()[pri:5, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:35 IST" name="testTopicDropdown" finished-at="2024-11-25T08:21:36 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTopicDropdown -->
+        <test-method signature="testRefMaterialClickable()[pri:6, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:36 IST" name="testRefMaterialClickable" finished-at="2024-11-25T08:21:36 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefMaterialClickable -->
+        <test-method signature="testRefMatTableHeader()[pri:7, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:36 IST" name="testRefMatTableHeader" finished-at="2024-11-25T08:21:39 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="2866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefMatTableHeader -->
+        <test-method signature="testActionsDeletebtnEnable()[pri:8, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:39 IST" name="testActionsDeletebtnEnable" finished-at="2024-11-25T08:21:39 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testActionsDeletebtnEnable -->
+        <test-method signature="testAddRefMaterailDisplayed()[pri:9, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:39 IST" name="testAddRefMaterailDisplayed" finished-at="2024-11-25T08:21:39 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddRefMaterailDisplayed -->
+        <test-method signature="testAddRefMaterailFunction()[pri:10, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:39 IST" name="testAddRefMaterailFunction" finished-at="2024-11-25T08:21:40 IST" depends-on-methods="TestCases.MentorDashboardTest.testAddRefMaterailDisplayed" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddRefMaterailFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.MentorDashboardTest@1b7cc17c]" started-at="2024-11-25T08:21:40 IST" name="tearDown" finished-at="2024-11-25T08:21:42 IST" duration-ms="1987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.MentorDashboardTest -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- Suite -->
+</testng-results>

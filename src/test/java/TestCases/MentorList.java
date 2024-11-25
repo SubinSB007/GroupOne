@@ -19,7 +19,7 @@ public class MentorList extends TestBase{
 	MentorListPage mlp;
 	
 	@Test(priority=1,groups= {"regression"})
-	public void testMentorListPageNavigation() {
+	public void testMentorListPageNavigation() throws InterruptedException {
 		logger.info("Started mentorlist navigation");
 		
 		hp=new HomePage(driver);

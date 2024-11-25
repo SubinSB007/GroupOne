@@ -32,49 +32,49 @@ public class TestBase {
 	}
 	
 	
-//	@SuppressWarnings("deprecation")
+	@SuppressWarnings("deprecation")
 	@BeforeClass(groups = {"sanity", "regression"})
-//	 @Parameters({"Browser","OS"}) // Here we specify that the "Browser" parameter will be passed to this method
-//	public void testSetUp(String browser,String os) throws InterruptedException, IOException {
-    public void testSetUp() throws InterruptedException, IOException { //use while executing test directly in test class
+	 @Parameters({"Browser","OS"}) // Here we specify that the "Browser" parameter will be passed to this method
+	public void testSetUp(String browser,String os) throws InterruptedException, IOException {
+//    public void testSetUp() throws InterruptedException, IOException { //use while executing test directly in test class
 		 logger=LogManager.getLogger(this.getClass());
 		 readProp();
-		String browser=prop.getProperty("browser");
+//		String browser=prop.getProperty("browser");
 		//Remote execution
-//			if (prop.getProperty("execution_env").equalsIgnoreCase("remote")) {
-//			    DesiredCapabilities capabilities = new DesiredCapabilities();
-//	
-//			    // os
-//			    if (os.equalsIgnoreCase("windows")) {
-//			        capabilities.setPlatform(Platform.WIN10);
-//			    } else if (os.equalsIgnoreCase("mac")) {
-//			        capabilities.setPlatform(Platform.MAC);
-//			    } else if(os.equalsIgnoreCase("Linux")) {
-//			    	capabilities.setPlatform(Platform.LINUX);
-//			    }else {
-//			        System.out.println("No matching os");
-//			        return;
-//			    }
-//	
-//			    // browser
-//			    switch (browser.toLowerCase()) {
-//			        case "chrome":
-//			            capabilities.setBrowserName("chrome");
-//			            break;
-//			        case "edge":
-//			            capabilities.setBrowserName("MicrosoftEdge");
-//			            break;
-//			        case "firefox":
-//			        	capabilities.setBrowserName("firefox");
-//			        break;
-//			        default:
-//			            System.out.println("No matching browser");
-//			            return;
-//			    }
-//	
-//			    driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
-//			}
-//			
+			if (prop.getProperty("execution_env").equalsIgnoreCase("remote")) {
+			    DesiredCapabilities capabilities = new DesiredCapabilities();
+	
+			    // os
+			    if (os.equalsIgnoreCase("windows")) {
+			        capabilities.setPlatform(Platform.WIN10);
+			    } else if (os.equalsIgnoreCase("mac")) {
+			        capabilities.setPlatform(Platform.MAC);
+			    } else if(os.equalsIgnoreCase("Linux")) {
+			    	capabilities.setPlatform(Platform.LINUX);
+			    }else {
+			        System.out.println("No matching os");
+			        return;
+			    }
+	
+			    // browser
+			    switch (browser.toLowerCase()) {
+			        case "chrome":
+			            capabilities.setBrowserName("chrome");
+			            break;
+			        case "edge":
+			            capabilities.setBrowserName("MicrosoftEdge");
+			            break;
+			        case "firefox":
+			        	capabilities.setBrowserName("firefox");
+			        break;
+			        default:
+			            System.out.println("No matching browser");
+			            return;
+			    }
+	
+			    driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+			}
+			
 			//local execution
 			if (prop.getProperty("execution_env").equalsIgnoreCase("local")) {	
 		switch(browser.toLowerCase()){

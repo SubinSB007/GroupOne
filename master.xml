@@ -8,12 +8,12 @@
     <parameter name="Browser" value="chrome">
   <parameter name="OS" value="windows"/> 
     <classes>
-      <class name="TestCases.MentorList"/>
-      <class name="TestCases.MentorDashboardTest"/>
-      <class name="TestCases.HomePageTest"/>
-      <class name="TestCases.AdminDashboardTest"/>
-      <class name="TestCases.LoginTest"/>
-      <class name="TestCases.ReferenceMaterialPageTest"/>
+    <class name="TestCases.HomePageTest"/>
+   <class name="TestCases.LoginTest"/>
+    <class name="TestCases.AdminDashboardTest"/>
+    <class name="TestCases.MentorList"/>
+    <class name="TestCases.MentorDashboardTest"/>
+    <class name="TestCases.ReferenceMaterialPageTest"/>
     </classes>
     </parameter>
   </test> <!-- Test -->

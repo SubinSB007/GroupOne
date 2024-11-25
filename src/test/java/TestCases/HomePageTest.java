@@ -28,7 +28,7 @@ public class HomePageTest extends TestBase{
 	@Test(priority=2,groups= {"sanity","regression"})
 	public void testLogoIsDisplayed() {
 		hp = new HomePage(driver);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		boolean L=hp.logodisplayed();
 		Assert.assertTrue(L, "Logo is not displayed");
 		
