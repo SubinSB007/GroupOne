@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-04T13:33:36 IST" name="Default suite" finished-at="2025-02-04T13:33:57 IST" duration-ms="20970">
+    <groups>
+      <group name="regression">
+        <method signature="MentorDashboardTest.testLogoutAvailable()[pri:1, instance:TestCases.MentorDashboardTest@223191a6]" name="testLogoutAvailable" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testRefMaterialClickable()[pri:6, instance:TestCases.MentorDashboardTest@223191a6]" name="testRefMaterialClickable" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testActionsDeletebtnEnable()[pri:8, instance:TestCases.MentorDashboardTest@223191a6]" name="testActionsDeletebtnEnable" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testAddRefMaterailDisplayed()[pri:9, instance:TestCases.MentorDashboardTest@223191a6]" name="testAddRefMaterailDisplayed" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testAddRefMaterailFunction()[pri:10, instance:TestCases.MentorDashboardTest@223191a6]" name="testAddRefMaterailFunction" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testRefMatTableHeader()[pri:7, instance:TestCases.MentorDashboardTest@223191a6]" name="testRefMatTableHeader" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testTopicDropdown()[pri:5, instance:TestCases.MentorDashboardTest@223191a6]" name="testTopicDropdown" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testrefMatVisibleSide()[pri:2, instance:TestCases.MentorDashboardTest@223191a6]" name="testrefMatVisibleSide" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testsubmissionListPage()[pri:3, instance:TestCases.MentorDashboardTest@223191a6]" name="testsubmissionListPage" class="TestCases.MentorDashboardTest"/>
+        <method signature="MentorDashboardTest.testBatchDropdown()[pri:4, instance:TestCases.MentorDashboardTest@223191a6]" name="testBatchDropdown" class="TestCases.MentorDashboardTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2025-02-04T13:33:36 IST" name="Default test" finished-at="2025-02-04T13:33:57 IST" duration-ms="20970">
+      <class name="TestCases.MentorDashboardTest">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:36 IST" name="testSetUp" finished-at="2025-02-04T13:33:44 IST" duration-ms="7259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="testLogoutAvailable()[pri:1, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:44 IST" name="testLogoutAvailable" finished-at="2025-02-04T13:33:50 IST" duration-ms="5875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutAvailable -->
+        <test-method signature="testrefMatVisibleSide()[pri:2, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:50 IST" name="testrefMatVisibleSide" finished-at="2025-02-04T13:33:51 IST" duration-ms="1031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testrefMatVisibleSide -->
+        <test-method signature="testsubmissionListPage()[pri:3, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:51 IST" name="testsubmissionListPage" finished-at="2025-02-04T13:33:51 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsubmissionListPage -->
+        <test-method signature="testBatchDropdown()[pri:4, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:51 IST" name="testBatchDropdown" finished-at="2025-02-04T13:33:54 IST" duration-ms="3341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchDropdown -->
+        <test-method signature="testTopicDropdown()[pri:5, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:54 IST" name="testTopicDropdown" finished-at="2025-02-04T13:33:55 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTopicDropdown -->
+        <test-method signature="testRefMaterialClickable()[pri:6, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:55 IST" name="testRefMaterialClickable" finished-at="2025-02-04T13:33:55 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefMaterialClickable -->
+        <test-method signature="testRefMatTableHeader()[pri:7, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:55 IST" name="testRefMatTableHeader" finished-at="2025-02-04T13:33:57 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="1855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefMatTableHeader -->
+        <test-method signature="testActionsDeletebtnEnable()[pri:8, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:57 IST" name="testActionsDeletebtnEnable" finished-at="2025-02-04T13:33:57 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testActionsDeletebtnEnable -->
+        <test-method signature="testAddRefMaterailDisplayed()[pri:9, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:57 IST" name="testAddRefMaterailDisplayed" finished-at="2025-02-04T13:33:57 IST" depends-on-methods="TestCases.MentorDashboardTest.testRefMaterialClickable" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddRefMaterailDisplayed -->
+        <test-method signature="testAddRefMaterailFunction()[pri:10, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:57 IST" name="testAddRefMaterailFunction" finished-at="2025-02-04T13:33:57 IST" depends-on-methods="TestCases.MentorDashboardTest.testAddRefMaterailDisplayed" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddRefMaterailFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.MentorDashboardTest@223191a6]" started-at="2025-02-04T13:33:57 IST" name="tearDown" finished-at="2025-02-04T13:33:57 IST" duration-ms="550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.MentorDashboardTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

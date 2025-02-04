@@ -44,7 +44,7 @@ public class AdminDashboardPage {
 	
 	//get current url
 	public String currentAdminUrlReturn() throws InterruptedException  {
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		String url=driver.getCurrentUrl();
 		return url;
 	}

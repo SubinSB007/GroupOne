@@ -64,7 +64,7 @@ public class LoginTest extends TestBase{
 	@Test(priority=4,groups= {"sanity","regression"})
 		public void testSignUpEnabled() {
 			 lp = new LoginPage(driver);
-			 hp = new HomePage(driver);
+		 	 hp = new HomePage(driver);
 			 hp.loginbtnClick();
 			 boolean s=lp.testSignupEnabled();
 			 Assert.assertTrue(s);
